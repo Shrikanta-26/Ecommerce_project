@@ -2,8 +2,8 @@ import React from "react";
 
 function HeroSection() {
   return (
-    <section className="relative w-full flex justify-center py-4 mb-4 ">
-      <div className="grid lg:grid-cols-2 gap-8 items-center">
+    <section className="relative border-b border-black/10 flex justify-center py-8 mb-4 bg-amber-50">
+      <div className="grid lg:grid-cols-2 gap-8 items-center container-custom ">
         {/* LEFT CONTENT COLUMN */}
         <div className="flex justify-start flex-col space-y-8">
           {/* Badge */}

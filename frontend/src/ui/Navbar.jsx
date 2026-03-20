@@ -3,8 +3,9 @@ import { NavLink, Link } from "react-router-dom";
 
 function Navbar() {
   return (
-    <nav className="flex items-center shrink-0 justify-between py-4 mb-4 w-full">
+    <nav className=" border-b border-black/10">
       {/* Logo */}
+      <div className="container-custom flex items-center shrink-0 w-full py-4 mb-4  justify-between">
       <div className="flex items-center gap-2 cursor-pointer">
         <div className="flex text-orange-500 font-bold text-2xl">
           <span>|</span>
@@ -119,6 +120,8 @@ function Navbar() {
           </button>
         </div>
       </div>
+      </div>
+
     </nav>
   );
 }

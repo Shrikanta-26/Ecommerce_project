@@ -1,9 +1,11 @@
 @import "tailwindcss";
 
-
 body {
   font-family: "Inter", sans-serif;
   background-color: #ffffff;
-  max-width: 1216px;
+  margin: auto;
+}
+.container-custom {
+  max-width: 1200px;
   margin: auto;
 }
