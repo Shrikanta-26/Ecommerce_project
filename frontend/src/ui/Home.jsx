@@ -1,5 +1,6 @@
 import React from "react";
 import Hero from "./Hero";
+import { NavLink } from "react-router-dom";
 
 function Home() {
   return (
@@ -144,7 +145,792 @@ function Home() {
         </div>
       </section>
 
-     
+      <section class="pt-16 container-custom">
+        <div class="text-center mb-10">
+          <h2 class="text-3xl text-[#0A0A0A] mb-3">Shop by Categories</h2>
+          <p class="text-[#4A5565] text-[16px]">
+            Explore our diverse collection of products
+          </p>
+        </div>
+
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-6 ">
+          <div class="border shadow bg-[#F9FAFB] border-[#F1F5F9] rounded-2xl p-7 flex flex-col items-center group cursor-pointer transition-all hover:shadow-sm">
+            <div class="w-full aspect-square rounded-2xl overflow-hidden mb-4">
+              <img
+                src="https://images.unsplash.com/photo-1555041469-a586c61ea9bc?auto=format&fit=crop&q=80&w=500"
+                alt="Furniture"
+                class="w-full aspect-square object-cover group-hover:scale-105 transition-transform duration-500"
+              />
+            </div>
+            <div class="flex items-center gap-2 mb-1">
+              <svg
+                width="20"
+                height="20"
+                viewBox="0 0 20 20"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M15.8333 7.50004V5.00004C15.8333 4.55801 15.6577 4.13409 15.3452 3.82153C15.0326 3.50897 14.6087 3.33337 14.1667 3.33337H5.83332C5.3913 3.33337 4.96737 3.50897 4.65481 3.82153C4.34225 4.13409 4.16666 4.55801 4.16666 5.00004V7.50004"
+                  stroke="#FF6900"
+                  stroke-width="1.66667"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+                <path
+                  d="M2.5 13.3333C2.5 13.7754 2.67559 14.1993 2.98816 14.5118C3.30072 14.8244 3.72464 15 4.16667 15H15.8333C16.2754 15 16.6993 14.8244 17.0118 14.5118C17.3244 14.1993 17.5 13.7754 17.5 13.3333V9.16667C17.5 8.72464 17.3244 8.30072 17.0118 7.98816C16.6993 7.6756 16.2754 7.5 15.8333 7.5C15.3913 7.5 14.9674 7.6756 14.6548 7.98816C14.3423 8.30072 14.1667 8.72464 14.1667 9.16667V10.4167C14.1667 10.5272 14.1228 10.6332 14.0446 10.7113C13.9665 10.7894 13.8605 10.8333 13.75 10.8333H6.25C6.13949 10.8333 6.03351 10.7894 5.95537 10.7113C5.87723 10.6332 5.83333 10.5272 5.83333 10.4167V9.16667C5.83333 8.72464 5.65774 8.30072 5.34518 7.98816C5.03262 7.6756 4.60869 7.5 4.16667 7.5C3.72464 7.5 3.30072 7.6756 2.98816 7.98816C2.67559 8.30072 2.5 8.72464 2.5 9.16667V13.3333Z"
+                  stroke="#FF6900"
+                  stroke-width="1.66667"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+                <path
+                  d="M4.16666 15V16.6667"
+                  stroke="#FF6900"
+                  stroke-width="1.66667"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+                <path
+                  d="M15.8333 15V16.6667"
+                  stroke="#FF6900"
+                  stroke-width="1.66667"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+              <span class="font-bold text-[#101828] text-lg">Furniture</span>
+            </div>
+            <p class="text-[#4A5565] text-sm">11 Products</p>
+          </div>
+
+          <div class="border shadow bg-[#F9FAFB] border-[#F1F5F9] rounded-2xl p-7 flex flex-col items-center group cursor-pointer transition-all hover:shadow-sm">
+            <div class="w-full aspect-square rounded-2xl overflow-hidden mb-4">
+              <img
+                src="https://images.unsplash.com/photo-1505740420928-5e560c06d30e?auto=format&fit=crop&q=80&w=500"
+                alt="Electronics"
+                class="w-full aspect-square object-cover group-hover:scale-105 transition-transform duration-500"
+              />
+            </div>
+            <div class="flex items-center gap-2 mb-1">
+              <svg
+                width="20"
+                height="20"
+                viewBox="0 0 20 20"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M16.6666 13.3333V5.83329C16.6666 5.39127 16.491 4.96734 16.1785 4.65478C15.8659 4.34222 15.442 4.16663 15 4.16663H4.99998C4.55795 4.16663 4.13403 4.34222 3.82147 4.65478C3.5089 4.96734 3.33331 5.39127 3.33331 5.83329V13.3333M16.6666 13.3333H3.33331M16.6666 13.3333L17.7333 15.4583C17.7976 15.5858 17.828 15.7276 17.8216 15.8703C17.8153 16.0129 17.7725 16.1515 17.6972 16.2728C17.6219 16.3941 17.5167 16.494 17.3917 16.563C17.2667 16.6319 17.1261 16.6676 16.9833 16.6666H3.01664C2.87388 16.6676 2.73326 16.6319 2.60826 16.563C2.48326 16.494 2.37808 16.3941 2.30279 16.2728C2.2275 16.1515 2.18464 16.0129 2.17831 15.8703C2.17198 15.7276 2.2024 15.5858 2.26664 15.4583L3.33331 13.3333"
+                  stroke="#FF6900"
+                  stroke-width="1.66667"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+              <span class="font-bold text-[#101828] text-lg">Electronics</span>
+            </div>
+            <p class="text-[#4A5565] text-sm">3 Products</p>
+          </div>
+
+          <div class="border shadow bg-[#F9FAFB] border-[#F1F5F9] rounded-2xl p-7 flex flex-col items-center group cursor-pointer transition-all hover:shadow-sm">
+            <div class="w-full aspect-square rounded-2xl overflow-hidden mb-4">
+              <img
+                src="https://images.unsplash.com/photo-1542291026-7eec264c27ff?auto=format&fit=crop&q=80&w=500"
+                alt="Fashion"
+                class="w-full aspect-square object-cover group-hover:scale-105 transition-transform duration-500"
+              />
+            </div>
+            <div class="flex items-center gap-2 mb-1">
+              <svg
+                width="20"
+                height="20"
+                viewBox="0 0 20 20"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M16.9833 2.88329L13.3333 1.66663C13.3333 2.55068 12.9821 3.39853 12.357 4.02365C11.7319 4.64877 10.884 4.99996 9.99997 4.99996C9.11592 4.99996 8.26807 4.64877 7.64295 4.02365C7.01783 3.39853 6.66664 2.55068 6.66664 1.66663L3.01664 2.88329C2.63946 3.00895 2.31962 3.26531 2.11485 3.60608C1.91008 3.94685 1.83387 4.3496 1.89997 4.74163L2.38331 7.63329C2.41504 7.82905 2.51554 8.00708 2.66676 8.13539C2.81797 8.26369 3.00999 8.33386 3.20831 8.33329H4.99997V16.6666C4.99997 17.5833 5.74997 18.3333 6.66664 18.3333H13.3333C13.7753 18.3333 14.1993 18.1577 14.5118 17.8451C14.8244 17.5326 15 17.1087 15 16.6666V8.33329H16.7916C16.99 8.33386 17.182 8.26369 17.3332 8.13539C17.4844 8.00708 17.5849 7.82905 17.6166 7.63329L18.1 4.74163C18.1661 4.3496 18.0899 3.94685 17.8851 3.60608C17.6803 3.26531 17.3605 3.00895 16.9833 2.88329Z"
+                  stroke="#FF6900"
+                  stroke-width="1.66667"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+              <span class="font-bold text-[#101828] text-lg">Fashion</span>
+            </div>
+            <p class="text-[#4A5565] text-sm">3 Products</p>
+          </div>
+
+          <div class="border shadow bg-[#F9FAFB] border-[#F1F5F9] rounded-2xl p-7 flex flex-col items-center group cursor-pointer transition-all hover:shadow-sm">
+            <div class="w-full aspect-square rounded-2xl overflow-hidden mb-4">
+              <img
+                src="https://images.unsplash.com/photo-1581781870027-04212e231e96?auto=format&fit=crop&q=80&w=500"
+                alt="Home Decor"
+                class="w-full aspect-square object-cover group-hover:scale-105 transition-transform duration-500"
+              />
+            </div>
+            <div class="flex items-center gap-2 mb-1">
+              <svg
+                width="20"
+                height="20"
+                viewBox="0 0 20 20"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M5 1.66663L2.5 4.99996V16.6666C2.5 17.1087 2.67559 17.5326 2.98816 17.8451C3.30072 18.1577 3.72464 18.3333 4.16667 18.3333H15.8333C16.2754 18.3333 16.6993 18.1577 17.0118 17.8451C17.3244 17.5326 17.5 17.1087 17.5 16.6666V4.99996L15 1.66663H5Z"
+                  stroke="#FF6900"
+                  stroke-width="1.66667"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+                <path
+                  d="M2.5 5H17.5"
+                  stroke="#FF6900"
+                  stroke-width="1.66667"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+                <path
+                  d="M13.3333 8.33337C13.3333 9.21743 12.9821 10.0653 12.357 10.6904C11.7319 11.3155 10.884 11.6667 9.99996 11.6667C9.1159 11.6667 8.26806 11.3155 7.64294 10.6904C7.01782 10.0653 6.66663 9.21743 6.66663 8.33337"
+                  stroke="#FF6900"
+                  stroke-width="1.66667"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+              <span class="font-bold text-[#101828] text-lg">Home Decor</span>
+            </div>
+            <p class="text-[#4A5565] text-sm">3 Products</p>
+          </div>
+
+          <div class="border shadow bg-[#F9FAFB] border-[#F1F5F9] rounded-2xl p-7 flex flex-col items-center group cursor-pointer transition-all hover:shadow-sm">
+            <div class="w-full aspect-square rounded-2xl overflow-hidden mb-4">
+              <img
+                src="https://images.unsplash.com/photo-1523275335684-37898b6baf30?auto=format&fit=crop&q=80&w=500"
+                alt="Accessories"
+                class="w-full aspect-square object-cover group-hover:scale-105 transition-transform duration-500"
+              />
+            </div>
+            <div class="flex items-center gap-2 mb-1">
+              <svg
+                class="w-5 h-5 text-[#FF6B00]"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                viewBox="0 0 24 24"
+              >
+                <path d="M16 11V7a4 4 0 00-8 0v4M5 9h14l1 12H4L5 9z"></path>
+              </svg>
+              <span class="font-bold text-[#101828] text-lg">Accessories</span>
+            </div>
+            <p class="text-[#4A5565] text-sm">3 Products</p>
+          </div>
+        </div>
+      </section>
+
+      {/* New section */}
+
+      <section className="container-custom pt-30">
+        <div class="mb-8">
+          <div class="flex items-center gap-2">
+            <svg
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M22 7L13.5 15.5L8.5 10.5L2 17"
+                stroke="#FF6900"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+              <path
+                d="M16 7H22V13"
+                stroke="#FF6900"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+            </svg>
+            <h2 class="text-2xl font-bold text-gray-900">Trending Now</h2>
+          </div>
+          <p class="text-gray-500 mt-1">Most popular items this week</p>
+        </div>
+
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+          <div class="border rounded-2xl border-gray-100 shadow-2xl">
+            <div class="relative aspect-square p-4">
+              <span class="absolute top-2 right-4 bg-orange-500 text-[10px] text-white font-bold px-2 py-1 rounded uppercase tracking-wider z-10">
+                Hot
+              </span>
+              <img
+                src="https://images.unsplash.com/photo-1592078615290-033ee584e267?auto=format&fit=crop&w=500&q=80"
+                alt="Chair"
+                class="w-full h-full object-contain"
+              />
+            </div>
+
+            <div class="p-4 bg-[#F8F9FA] border-t border-gray-50">
+              <div class="flex items-center gap-1 mb-2">
+                <div class="flex text-yellow-400 text-xs">★★★★★</div>
+                <span class="text-[10px] text-gray-400">(8 reviews)</span>
+              </div>
+              <h3 class="text-sm font-semibold text-gray-800 mb-2">
+                Aqui Glades Accent Chair
+              </h3>
+              <div class="flex items-center gap-2">
+                <span class="text-xs text-gray-400 line-through">$30.00</span>
+                <span class="text-base font-bold text-orange-600">$25.00</span>
+              </div>
+            </div>
+          </div>
+          <div class="border rounded-2xl border-gray-100 shadow-2xl">
+            <div class="relative aspect-square p-4">
+              <span class="absolute top-2 right-4 bg-orange-500 text-[10px] text-white font-bold px-2 py-1 rounded uppercase tracking-wider z-10">
+                Hot
+              </span>
+              <img
+                src="https://images.unsplash.com/photo-1592078615290-033ee584e267?auto=format&fit=crop&w=500&q=80"
+                alt="Chair"
+                class="w-full h-full object-contain"
+              />
+            </div>
+
+            <div class="p-4 bg-[#F8F9FA] border-t border-gray-50">
+              <div class="flex items-center gap-1 mb-2">
+                <div class="flex text-yellow-400 text-xs">★★★★★</div>
+                <span class="text-[10px] text-gray-400">(8 reviews)</span>
+              </div>
+              <h3 class="text-sm font-semibold text-gray-800 mb-2">
+                Aqui Glades Accent Chair
+              </h3>
+              <div class="flex items-center gap-2">
+                <span class="text-xs text-gray-400 line-through">$30.00</span>
+                <span class="text-base font-bold text-orange-600">$25.00</span>
+              </div>
+            </div>
+          </div>
+          <div class="border rounded-2xl border-gray-100 shadow-2xl">
+            <div class="relative aspect-square p-4">
+              <span class="absolute top-2 right-4 bg-orange-500 text-[10px] text-white font-bold px-2 py-1 rounded uppercase tracking-wider z-10">
+                Hot
+              </span>
+              <img
+                src="https://images.unsplash.com/photo-1592078615290-033ee584e267?auto=format&fit=crop&w=500&q=80"
+                alt="Chair"
+                class="w-full h-full object-contain"
+              />
+            </div>
+
+            <div class="p-4 bg-[#F8F9FA] border-t border-gray-50">
+              <div class="flex items-center gap-1 mb-2">
+                <div class="flex text-yellow-400 text-xs">★★★★★</div>
+                <span class="text-[10px] text-gray-400">(8 reviews)</span>
+              </div>
+              <h3 class="text-sm font-semibold text-gray-800 mb-2">
+                Aqui Glades Accent Chair
+              </h3>
+              <div class="flex items-center gap-2">
+                <span class="text-xs text-gray-400 line-through">$30.00</span>
+                <span class="text-base font-bold text-orange-600">$25.00</span>
+              </div>
+            </div>
+          </div>
+          <div class="border rounded-2xl border-gray-100 shadow-2xl">
+            <div class="relative aspect-square p-4">
+              <span class="absolute top-2 right-4 bg-orange-500 text-[10px] text-white font-bold px-2 py-1 rounded uppercase tracking-wider z-10">
+                Hot
+              </span>
+              <img
+                src="https://images.unsplash.com/photo-1592078615290-033ee584e267?auto=format&fit=crop&w=500&q=80"
+                alt="Chair"
+                class="w-full h-full object-contain"
+              />
+            </div>
+
+            <div class="p-4 bg-[#F8F9FA] border-t border-gray-50">
+              <div class="flex items-center gap-1 mb-2">
+                <div class="flex text-yellow-400 text-xs">★★★★★</div>
+                <span class="text-[10px] text-gray-400">(8 reviews)</span>
+              </div>
+              <h3 class="text-sm font-semibold text-gray-800 mb-2">
+                Aqui Glades Accent Chair
+              </h3>
+              <div class="flex items-center gap-2">
+                <span class="text-xs text-gray-400 line-through">$30.00</span>
+                <span class="text-base font-bold text-orange-600">$25.00</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* New Section? */}
+      <section class="mt-10  h-[800px]  bg-[linear-gradient(135deg,#FF6900_0%,#FB2C36_100%)] pt-10  text-white">
+        <div class="text-center mb-12">
+          <div class="flex items-center justify-center gap-2 text-4xl font-bold mb-2">
+            <svg
+              width="32"
+              height="32"
+              viewBox="0 0 32 32"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <g opacity="0.956761">
+                <path
+                  d="M5.33336 18.6666C5.08105 18.6674 4.83367 18.5967 4.61997 18.4625C4.40626 18.3284 4.23501 18.1364 4.1261 17.9088C4.01718 17.6812 3.97509 17.4273 4.0047 17.1768C4.0343 16.9262 4.1344 16.6892 4.29336 16.4932L17.4934 2.89323C17.5924 2.77893 17.7273 2.7017 17.876 2.6742C18.0247 2.6467 18.1783 2.67058 18.3117 2.7419C18.445 2.81322 18.5501 2.92775 18.6098 3.0667C18.6695 3.20565 18.6801 3.36076 18.64 3.50656L16.08 11.5332C16.0045 11.7353 15.9792 11.9526 16.0062 12.1666C16.0331 12.3806 16.1116 12.5848 16.2348 12.7618C16.3581 12.9388 16.5224 13.0832 16.7137 13.1828C16.9051 13.2823 17.1177 13.3339 17.3334 13.3332H26.6667C26.919 13.3324 27.1664 13.4031 27.3801 13.5373C27.5938 13.6714 27.7651 13.8634 27.874 14.091C27.9829 14.3186 28.025 14.5724 27.9954 14.823C27.9658 15.0736 27.8657 15.3106 27.7067 15.5066L14.5067 29.1066C14.4077 29.2208 14.2728 29.2981 14.1241 29.3256C13.9754 29.3531 13.8217 29.3292 13.6884 29.2579C13.555 29.1866 13.4499 29.072 13.3903 28.9331C13.3306 28.7941 13.3199 28.639 13.36 28.4932L15.92 20.4666C15.9955 20.2645 16.0209 20.0472 15.9939 19.8332C15.9669 19.6192 15.8885 19.415 15.7652 19.238C15.642 19.061 15.4777 18.9165 15.2863 18.817C15.095 18.7175 14.8824 18.6659 14.6667 18.6666H5.33336Z"
+                  stroke="white"
+                  stroke-width="2.66667"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </g>
+            </svg>
+            <h1 className="font-medium">Flash Sale</h1>
+          </div>
+          <p class="text-orange-100 text-lg mb-6">
+            Limited time offers - Don't miss out!
+          </p>
+
+          <div class="flex flex-col items-center gap-4 ">
+            <div class="flex items-center gap-2 text-sm font-medium">
+              <svg
+                width="20"
+                height="20"
+                viewBox="0 0 20 20"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M10 18.3334C14.6024 18.3334 18.3334 14.6025 18.3334 10.0001C18.3334 5.39771 14.6024 1.66675 10 1.66675C5.39765 1.66675 1.66669 5.39771 1.66669 10.0001C1.66669 14.6025 5.39765 18.3334 10 18.3334Z"
+                  stroke="white"
+                  stroke-width="1.66667"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+                <path
+                  d="M10 5V10L13.3333 11.6667"
+                  stroke="white"
+                  stroke-width="1.66667"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+              <span>Ends in:</span>
+            </div>
+
+            <div class="flex items-center gap-4 text-white">
+              <div class="flex flex-col items-center">
+                <div class="bg-white/20  rounded-lg w-16 h-16 flex items-center justify-center text-2xl font-bold">
+                  12
+                </div>
+                <span class="text-[10px] uppercase mt-2 tracking-widest opacity-90">
+                  Hours
+                </span>
+              </div>
+              <span class="text-2xl font-bold pb-6">:</span>
+              <div class="flex flex-col items-center">
+                <div class="bg-white/20  rounded-lg w-16 h-16 flex items-center justify-center text-2xl font-bold">
+                  34
+                </div>
+                <span class="text-[10px] uppercase mt-2 tracking-widest opacity-90">
+                  Minutes
+                </span>
+              </div>
+              <span class="text-2xl font-bold pb-6">:</span>
+              <div class="flex flex-col items-center">
+                <div class="bg-white/20 rounded-lg w-16 h-16 flex items-center justify-center text-2xl font-bold">
+                  25
+                </div>
+                <span class="text-[10px] uppercase mt-2 tracking-widest opacity-90">
+                  Seconds
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="container-custom  grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+          <div class="border bg-white rounded-2xl border-gray-100 shadow-2xl">
+            <div class="relative aspect-square p-4">
+              <span class="absolute top-2 right-4 bg-orange-500 text-[10px] text-white font-bold px-2 py-1 rounded uppercase tracking-wider z-10">
+                Hot
+              </span>
+              <img
+                src="https://images.unsplash.com/photo-1592078615290-033ee584e267?auto=format&fit=crop&w=500&q=80"
+                alt="Chair"
+                class="w-full h-full object-contain"
+              />
+            </div>
+
+            <div class="p-4 rounded-b-2xl bg-[#F8F9FA] border-t border-gray-50">
+              <div class="flex items-center gap-1 mb-2">
+                <div class="flex text-yellow-400 text-xs">★★★★★</div>
+                <span class="text-[10px] text-gray-400">(8 reviews)</span>
+              </div>
+              <h3 class="text-sm font-semibold text-gray-800 mb-2">
+                Aqui Glades Accent Chair
+              </h3>
+              <div class="flex items-center gap-2">
+                <span class="text-xs text-gray-400 line-through">$30.00</span>
+                <span class="text-base font-bold text-orange-600">$25.00</span>
+              </div>
+            </div>
+          </div>
+          <div class="border bg-white rounded-2xl border-gray-100 shadow-2xl">
+            <div class="relative aspect-square p-4">
+              <span class="absolute top-2 right-4 bg-orange-500 text-[10px] text-white font-bold px-2 py-1 rounded uppercase tracking-wider z-10">
+                Hot
+              </span>
+              <img
+                src="https://images.unsplash.com/photo-1592078615290-033ee584e267?auto=format&fit=crop&w=500&q=80"
+                alt="Chair"
+                class="w-full h-full object-contain"
+              />
+            </div>
+
+            <div class="p-4 rounded-b-2xl bg-[#F8F9FA] border-t border-gray-50">
+              <div class="flex items-center gap-1 mb-2">
+                <div class="flex text-yellow-400 text-xs">★★★★★</div>
+                <span class="text-[10px] text-gray-400">(8 reviews)</span>
+              </div>
+              <h3 class="text-sm font-semibold text-gray-800 mb-2">
+                Aqui Glades Accent Chair
+              </h3>
+              <div class="flex items-center gap-2">
+                <span class="text-xs text-gray-400 line-through">$30.00</span>
+                <span class="text-base font-bold text-orange-600">$25.00</span>
+              </div>
+            </div>
+          </div>
+          <div class="border bg-white rounded-2xl border-gray-100 shadow-2xl">
+            <div class="relative aspect-square p-4">
+              <span class="absolute top-2 right-4 bg-orange-500 text-[10px] text-white font-bold px-2 py-1 rounded uppercase tracking-wider z-10">
+                Hot
+              </span>
+              <img
+                src="https://images.unsplash.com/photo-1592078615290-033ee584e267?auto=format&fit=crop&w=500&q=80"
+                alt="Chair"
+                class="w-full h-full object-contain"
+              />
+            </div>
+
+            <div class="p-4 rounded-b-2xl bg-[#F8F9FA] border-t border-gray-50">
+              <div class="flex items-center gap-1 mb-2">
+                <div class="flex text-yellow-400 text-xs">★★★★★</div>
+                <span class="text-[10px] text-gray-400">(8 reviews)</span>
+              </div>
+              <h3 class="text-sm font-semibold text-gray-800 mb-2">
+                Aqui Glades Accent Chair
+              </h3>
+              <div class="flex items-center gap-2">
+                <span class="text-xs text-gray-400 line-through">$30.00</span>
+                <span class="text-base font-bold text-orange-600">$25.00</span>
+              </div>
+            </div>
+          </div>
+          <div class="border  bg-white rounded-2xl border-gray-100 shadow-2xl">
+            <div class="relative aspect-square p-4">
+              <span class="absolute top-2 right-4 bg-orange-500 text-[10px] text-white font-bold px-2 py-1 rounded uppercase tracking-wider z-10">
+                Hot
+              </span>
+              <img
+                src="https://images.unsplash.com/photo-1592078615290-033ee584e267?auto=format&fit=crop&w=500&q=80"
+                alt="Chair"
+                class="w-full h-full object-contain"
+              />
+            </div>
+
+            <div class="p-4 rounded-b-2xl bg-[#F8F9FA] border-t border-gray-50">
+              <div class="flex items-center gap-1 mb-2">
+                <div class="flex text-yellow-400 text-xs">★★★★★</div>
+                <span class="text-[10px] text-gray-400">(8 reviews)</span>
+              </div>
+              <h3 class="text-sm font-semibold text-gray-800 mb-2">
+                Aqui Glades Accent Chair
+              </h3>
+              <div class="flex items-center gap-2">
+                <span class="text-xs text-gray-400 line-through">$30.00</span>
+                <span class="text-base font-bold text-orange-600">$25.00</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* new section */}
+
+      <section class="container-custom mt-10 text-gray-900">
+        <div class="mt-10">
+          <div class="flex flex-col md:flex-row md:items-center justify-between gap-6 mb-10 border-b border-gray-100 pb-4">
+            <h2 class="text-3xl font-normal">Hot Products</h2>
+
+            <div class="flex items-center gap-6">
+              <nav class="flex items-center gap-6 text-[11px] font-bold uppercase tracking-wider text-gray-400">
+                <NavLink to="/" class="hover:text-orange-600 pb-5 -mb-[18px]">
+                  Latest Products
+                </NavLink>
+                <NavLink to="/" class="hover:text-orange-600 ">
+                  Top Rated
+                </NavLink>
+                <NavLink to="/" class="hover:text-orange-600 ">
+                  Best Sellers
+                </NavLink>
+              </nav>
+
+              <button class="flex items-center gap-2 border cursor-pointer border-gray-200 px-4 py-2 rounded text-xs font-semibold hover:bg-gray-50 transition-colors">
+                All products
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="h-3 w-3"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M14 5l7 7m0 0l-7 7m7-7H3"
+                  />
+                </svg>
+              </button>
+            </div>
+          </div>
+
+          <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-x-6 gap-y-10">
+            <div class="border rounded-2xl border-gray-100 shadow-2xl">
+              <div class="relative aspect-square p-4">
+                <span class="absolute top-2 right-4 bg-orange-500 text-[10px] text-white font-bold px-2 py-1 rounded uppercase tracking-wider z-10">
+                  Hot
+                </span>
+                <img
+                  src="https://images.unsplash.com/photo-1592078615290-033ee584e267?auto=format&fit=crop&w=500&q=80"
+                  alt="Chair"
+                  class="w-full h-full object-contain"
+                />
+              </div>
+
+              <div class="p-4 bg-[#F8F9FA] border-t border-gray-50">
+                <div class="flex items-center gap-1 mb-2">
+                  <div class="flex text-yellow-400 text-xs">★★★★★</div>
+                  <span class="text-[10px] text-gray-400">(8 reviews)</span>
+                </div>
+                <h3 class="text-sm font-semibold text-gray-800 mb-2">
+                  Aqui Glades Accent Chair
+                </h3>
+                <div class="flex items-center gap-2">
+                  <span class="text-xs text-gray-400 line-through">$30.00</span>
+                  <span class="text-base font-bold text-orange-600">
+                    $25.00
+                  </span>
+                </div>
+              </div>
+            </div>
+            <div class="border rounded-2xl border-gray-100 shadow-2xl">
+              <div class="relative aspect-square p-4">
+                <span class="absolute top-2 right-4 bg-orange-500 text-[10px] text-white font-bold px-2 py-1 rounded uppercase tracking-wider z-10">
+                  Hot
+                </span>
+                <img
+                  src="https://images.unsplash.com/photo-1592078615290-033ee584e267?auto=format&fit=crop&w=500&q=80"
+                  alt="Chair"
+                  class="w-full h-full object-contain"
+                />
+              </div>
+
+              <div class="p-4 bg-[#F8F9FA] border-t border-gray-50">
+                <div class="flex items-center gap-1 mb-2">
+                  <div class="flex text-yellow-400 text-xs">★★★★★</div>
+                  <span class="text-[10px] text-gray-400">(8 reviews)</span>
+                </div>
+                <h3 class="text-sm font-semibold text-gray-800 mb-2">
+                  Aqui Glades Accent Chair
+                </h3>
+                <div class="flex items-center gap-2">
+                  <span class="text-xs text-gray-400 line-through">$30.00</span>
+                  <span class="text-base font-bold text-orange-600">
+                    $25.00
+                  </span>
+                </div>
+              </div>
+            </div>
+            <div class="border rounded-2xl border-gray-100 shadow-2xl">
+              <div class="relative aspect-square p-4">
+                <span class="absolute top-2 right-4 bg-orange-500 text-[10px] text-white font-bold px-2 py-1 rounded uppercase tracking-wider z-10">
+                  Hot
+                </span>
+                <img
+                  src="https://images.unsplash.com/photo-1592078615290-033ee584e267?auto=format&fit=crop&w=500&q=80"
+                  alt="Chair"
+                  class="w-full h-full object-contain"
+                />
+              </div>
+
+              <div class="p-4 bg-[#F8F9FA] border-t border-gray-50">
+                <div class="flex items-center gap-1 mb-2">
+                  <div class="flex text-yellow-400 text-xs">★★★★★</div>
+                  <span class="text-[10px] text-gray-400">(8 reviews)</span>
+                </div>
+                <h3 class="text-sm font-semibold text-gray-800 mb-2">
+                  Aqui Glades Accent Chair
+                </h3>
+                <div class="flex items-center gap-2">
+                  <span class="text-xs text-gray-400 line-through">$30.00</span>
+                  <span class="text-base font-bold text-orange-600">
+                    $25.00
+                  </span>
+                </div>
+              </div>
+            </div>
+            <div class="border rounded-2xl border-gray-100 shadow-2xl">
+              <div class="relative aspect-square p-4">
+                <span class="absolute top-2 right-4 bg-orange-500 text-[10px] text-white font-bold px-2 py-1 rounded uppercase tracking-wider z-10">
+                  Hot
+                </span>
+                <img
+                  src="https://images.unsplash.com/photo-1592078615290-033ee584e267?auto=format&fit=crop&w=500&q=80"
+                  alt="Chair"
+                  class="w-full h-full object-contain"
+                />
+              </div>
+
+              <div class="p-4 bg-[#F8F9FA] border-t border-gray-50">
+                <div class="flex items-center gap-1 mb-2">
+                  <div class="flex text-yellow-400 text-xs">★★★★★</div>
+                  <span class="text-[10px] text-gray-400">(8 reviews)</span>
+                </div>
+                <h3 class="text-sm font-semibold text-gray-800 mb-2">
+                  Aqui Glades Accent Chair
+                </h3>
+                <div class="flex items-center gap-2">
+                  <span class="text-xs text-gray-400 line-through">$30.00</span>
+                  <span class="text-base font-bold text-orange-600">
+                    $25.00
+                  </span>
+                </div>
+              </div>
+            </div>
+            <div class="border rounded-2xl border-gray-100 shadow-2xl">
+              <div class="relative aspect-square p-4">
+                <span class="absolute top-2 right-4 bg-orange-500 text-[10px] text-white font-bold px-2 py-1 rounded uppercase tracking-wider z-10">
+                  Hot
+                </span>
+                <img
+                  src="https://images.unsplash.com/photo-1592078615290-033ee584e267?auto=format&fit=crop&w=500&q=80"
+                  alt="Chair"
+                  class="w-full h-full object-contain"
+                />
+              </div>
+
+              <div class="p-4 bg-[#F8F9FA] border-t border-gray-50">
+                <div class="flex items-center gap-1 mb-2">
+                  <div class="flex text-yellow-400 text-xs">★★★★★</div>
+                  <span class="text-[10px] text-gray-400">(8 reviews)</span>
+                </div>
+                <h3 class="text-sm font-semibold text-gray-800 mb-2">
+                  Aqui Glades Accent Chair
+                </h3>
+                <div class="flex items-center gap-2">
+                  <span class="text-xs text-gray-400 line-through">$30.00</span>
+                  <span class="text-base font-bold text-orange-600">
+                    $25.00
+                  </span>
+                </div>
+              </div>
+            </div>
+            <div class="border rounded-2xl border-gray-100 shadow-2xl">
+              <div class="relative aspect-square p-4">
+                <span class="absolute top-2 right-4 bg-orange-500 text-[10px] text-white font-bold px-2 py-1 rounded uppercase tracking-wider z-10">
+                  Hot
+                </span>
+                <img
+                  src="https://images.unsplash.com/photo-1592078615290-033ee584e267?auto=format&fit=crop&w=500&q=80"
+                  alt="Chair"
+                  class="w-full h-full object-contain"
+                />
+              </div>
+
+              <div class="p-4 bg-[#F8F9FA] border-t border-gray-50">
+                <div class="flex items-center gap-1 mb-2">
+                  <div class="flex text-yellow-400 text-xs">★★★★★</div>
+                  <span class="text-[10px] text-gray-400">(8 reviews)</span>
+                </div>
+                <h3 class="text-sm font-semibold text-gray-800 mb-2">
+                  Aqui Glades Accent Chair
+                </h3>
+                <div class="flex items-center gap-2">
+                  <span class="text-xs text-gray-400 line-through">$30.00</span>
+                  <span class="text-base font-bold text-orange-600">
+                    $25.00
+                  </span>
+                </div>
+              </div>
+            </div>
+            <div class="border rounded-2xl border-gray-100 shadow-2xl">
+              <div class="relative aspect-square p-4">
+                <span class="absolute top-2 right-4 bg-orange-500 text-[10px] text-white font-bold px-2 py-1 rounded uppercase tracking-wider z-10">
+                  Hot
+                </span>
+                <img
+                  src="https://images.unsplash.com/photo-1592078615290-033ee584e267?auto=format&fit=crop&w=500&q=80"
+                  alt="Chair"
+                  class="w-full h-full object-contain"
+                />
+              </div>
+
+              <div class="p-4 bg-[#F8F9FA] border-t border-gray-50">
+                <div class="flex items-center gap-1 mb-2">
+                  <div class="flex text-yellow-400 text-xs">★★★★★</div>
+                  <span class="text-[10px] text-gray-400">(8 reviews)</span>
+                </div>
+                <h3 class="text-sm font-semibold text-gray-800 mb-2">
+                  Aqui Glades Accent Chair
+                </h3>
+                <div class="flex items-center gap-2">
+                  <span class="text-xs text-gray-400 line-through">$30.00</span>
+                  <span class="text-base font-bold text-orange-600">
+                    $25.00
+                  </span>
+                </div>
+              </div>
+            </div>
+            <div class="border rounded-2xl border-gray-100 shadow-2xl">
+              <div class="relative aspect-square p-4">
+                <span class="absolute top-2 right-4 bg-orange-500 text-[10px] text-white font-bold px-2 py-1 rounded uppercase tracking-wider z-10">
+                  Hot
+                </span>
+                <img
+                  src="https://images.unsplash.com/photo-1592078615290-033ee584e267?auto=format&fit=crop&w=500&q=80"
+                  alt="Chair"
+                  class="w-full h-full object-contain"
+                />
+              </div>
+
+              <div class="p-4 bg-[#F8F9FA] border-t border-gray-50">
+                <div class="flex items-center gap-1 mb-2">
+                  <div class="flex text-yellow-400 text-xs">★★★★★</div>
+                  <span class="text-[10px] text-gray-400">(8 reviews)</span>
+                </div>
+                <h3 class="text-sm font-semibold text-gray-800 mb-2">
+                  Aqui Glades Accent Chair
+                </h3>
+                <div class="flex items-center gap-2">
+                  <span class="text-xs text-gray-400 line-through">$30.00</span>
+                  <span class="text-base font-bold text-orange-600">
+                    $25.00
+                  </span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
     </>
   );
 }
