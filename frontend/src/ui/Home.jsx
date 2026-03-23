@@ -667,7 +667,7 @@ function Home() {
 
       <section class="container-custom mt-10 text-gray-900">
         <div class="mt-10">
-          <div class="flex flex-col md:flex-row md:items-center justify-between gap-6 mb-10 border-b border-gray-100 pb-4">
+          <div class="flex flex-col md:flex-row md:items-center justify-between gap-6 mb-10 pb-4">
             <h2 class="text-3xl font-normal">Hot Products</h2>
 
             <div class="flex items-center gap-6">
@@ -925,6 +925,164 @@ function Home() {
                   <span class="text-base font-bold text-orange-600">
                     $25.00
                   </span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Testimonial section */}
+      <section class="py-16 px-4 ">
+        <div class="container-custom">
+          <div class="text-center mb-12">
+            <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
+              What Our Customers Say
+            </h2>
+            <p class="text-gray-600 text-lg">
+              Join thousands of satisfied customers who trust us for their
+              shopping needs
+            </p>
+          </div>
+
+          <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <div class="p-8 rounded-2xl shadow-sm border border-gray-100 flex flex-col justify-between">
+              <div>
+                <span class="text-orange-400 text-5xl  block mb-4">
+                  <svg
+                    width="40"
+                    height="40"
+                    viewBox="0 0 40 40"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M26.6667 5C25.7826 5 24.9348 5.35119 24.3097 5.97631C23.6845 6.60143 23.3333 7.44928 23.3333 8.33333V18.3333C23.3333 19.2174 23.6845 20.0652 24.3097 20.6904C24.9348 21.3155 25.7826 21.6667 26.6667 21.6667C27.1087 21.6667 27.5326 21.8423 27.8452 22.1548C28.1577 22.4674 28.3333 22.8913 28.3333 23.3333V25C28.3333 25.8841 27.9822 26.7319 27.357 27.357C26.7319 27.9821 25.8841 28.3333 25 28.3333C24.558 28.3333 24.1341 28.5089 23.8215 28.8215C23.5089 29.134 23.3333 29.558 23.3333 30V33.3333C23.3333 33.7754 23.5089 34.1993 23.8215 34.5118C24.1341 34.8244 24.558 35 25 35C27.6522 35 30.1957 33.9464 32.0711 32.0711C33.9464 30.1957 35 27.6522 35 25V8.33333C35 7.44928 34.6488 6.60143 34.0237 5.97631C33.3986 5.35119 32.5507 5 31.6667 5H26.6667Z"
+                      stroke="#FFD6A7"
+                      stroke-width="3.33333"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                    <path
+                      d="M8.33333 5C7.44928 5 6.60143 5.35119 5.97631 5.97631C5.35119 6.60143 5 7.44928 5 8.33333V18.3333C5 19.2174 5.35119 20.0652 5.97631 20.6904C6.60143 21.3155 7.44928 21.6667 8.33333 21.6667C8.77536 21.6667 9.19928 21.8423 9.51184 22.1548C9.8244 22.4674 10 22.8913 10 23.3333V25C10 25.8841 9.64881 26.7319 9.02369 27.357C8.39857 27.9821 7.55072 28.3333 6.66667 28.3333C6.22464 28.3333 5.80072 28.5089 5.48816 28.8215C5.17559 29.134 5 29.558 5 30V33.3333C5 33.7754 5.17559 34.1993 5.48816 34.5118C5.80072 34.8244 6.22464 35 6.66667 35C9.31883 35 11.8624 33.9464 13.7377 32.0711C15.6131 30.1957 16.6667 27.6522 16.6667 25V8.33333C16.6667 7.44928 16.3155 6.60143 15.6904 5.97631C15.0652 5.35119 14.2174 5 13.3333 5H8.33333Z"
+                      stroke="#FFD6A7"
+                      stroke-width="3.33333"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                  </svg>
+                </span>
+                <div class="flex mb-4">
+                  <span class="text-orange-500 text-xl">★★★★★</span>
+                </div>
+                <p class="text-gray-700 mb-8">
+                  "The quality and design of the products exceeded my
+                  expectations. Fast shipping and excellent customer service!"
+                </p>
+              </div>
+              <div class="flex items-center gap-4">
+                <img
+                  src="https://i.pravatar.cc/150?u=sarah"
+                  alt="Sarah Johnson"
+                  class="w-12 h-12 rounded-full object-cover"
+                />
+                <div>
+                  <h4 class="font-bold text-gray-900">Sarah Johnson</h4>
+                  <p class="text-sm text-gray-500">Interior Designer</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="p-8 rounded-2xl shadow-sm border border-gray-100 flex flex-col justify-between">
+              <div>
+                <span class="text-orange-400 text-5xl  block mb-4">
+                  <svg
+                    width="40"
+                    height="40"
+                    viewBox="0 0 40 40"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M26.6667 5C25.7826 5 24.9348 5.35119 24.3097 5.97631C23.6845 6.60143 23.3333 7.44928 23.3333 8.33333V18.3333C23.3333 19.2174 23.6845 20.0652 24.3097 20.6904C24.9348 21.3155 25.7826 21.6667 26.6667 21.6667C27.1087 21.6667 27.5326 21.8423 27.8452 22.1548C28.1577 22.4674 28.3333 22.8913 28.3333 23.3333V25C28.3333 25.8841 27.9822 26.7319 27.357 27.357C26.7319 27.9821 25.8841 28.3333 25 28.3333C24.558 28.3333 24.1341 28.5089 23.8215 28.8215C23.5089 29.134 23.3333 29.558 23.3333 30V33.3333C23.3333 33.7754 23.5089 34.1993 23.8215 34.5118C24.1341 34.8244 24.558 35 25 35C27.6522 35 30.1957 33.9464 32.0711 32.0711C33.9464 30.1957 35 27.6522 35 25V8.33333C35 7.44928 34.6488 6.60143 34.0237 5.97631C33.3986 5.35119 32.5507 5 31.6667 5H26.6667Z"
+                      stroke="#FFD6A7"
+                      stroke-width="3.33333"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                    <path
+                      d="M8.33333 5C7.44928 5 6.60143 5.35119 5.97631 5.97631C5.35119 6.60143 5 7.44928 5 8.33333V18.3333C5 19.2174 5.35119 20.0652 5.97631 20.6904C6.60143 21.3155 7.44928 21.6667 8.33333 21.6667C8.77536 21.6667 9.19928 21.8423 9.51184 22.1548C9.8244 22.4674 10 22.8913 10 23.3333V25C10 25.8841 9.64881 26.7319 9.02369 27.357C8.39857 27.9821 7.55072 28.3333 6.66667 28.3333C6.22464 28.3333 5.80072 28.5089 5.48816 28.8215C5.17559 29.134 5 29.558 5 30V33.3333C5 33.7754 5.17559 34.1993 5.48816 34.5118C5.80072 34.8244 6.22464 35 6.66667 35C9.31883 35 11.8624 33.9464 13.7377 32.0711C15.6131 30.1957 16.6667 27.6522 16.6667 25V8.33333C16.6667 7.44928 16.3155 6.60143 15.6904 5.97631C15.0652 5.35119 14.2174 5 13.3333 5H8.33333Z"
+                      stroke="#FFD6A7"
+                      stroke-width="3.33333"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                  </svg>
+                </span>
+                <div class="flex mb-4">
+                  <span class="text-orange-500 text-xl">★★★★★</span>
+                </div>
+                <p class="text-gray-700 mb-8">
+                  "I transformed my entire living space with products from this
+                  store. The variety and affordability are unmatched!"
+                </p>
+              </div>
+              <div class="flex items-center gap-4">
+                <img
+                  src="https://i.pravatar.cc/150?u=michael"
+                  alt="Michael Chen"
+                  class="w-12 h-12 rounded-full object-cover"
+                />
+                <div>
+                  <h4 class="font-bold text-gray-900 ">Michael Chen</h4>
+                  <p class="text-sm text-gray-500">Home Owner</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="p-8 rounded-2xl shadow-sm border border-gray-100 flex flex-col justify-between">
+              <div>
+                <span class="text-orange-400 text-5xl block mb-4">
+                  <svg
+                    width="40"
+                    height="40"
+                    viewBox="0 0 40 40"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M26.6667 5C25.7826 5 24.9348 5.35119 24.3097 5.97631C23.6845 6.60143 23.3333 7.44928 23.3333 8.33333V18.3333C23.3333 19.2174 23.6845 20.0652 24.3097 20.6904C24.9348 21.3155 25.7826 21.6667 26.6667 21.6667C27.1087 21.6667 27.5326 21.8423 27.8452 22.1548C28.1577 22.4674 28.3333 22.8913 28.3333 23.3333V25C28.3333 25.8841 27.9822 26.7319 27.357 27.357C26.7319 27.9821 25.8841 28.3333 25 28.3333C24.558 28.3333 24.1341 28.5089 23.8215 28.8215C23.5089 29.134 23.3333 29.558 23.3333 30V33.3333C23.3333 33.7754 23.5089 34.1993 23.8215 34.5118C24.1341 34.8244 24.558 35 25 35C27.6522 35 30.1957 33.9464 32.0711 32.0711C33.9464 30.1957 35 27.6522 35 25V8.33333C35 7.44928 34.6488 6.60143 34.0237 5.97631C33.3986 5.35119 32.5507 5 31.6667 5H26.6667Z"
+                      stroke="#FFD6A7"
+                      stroke-width="3.33333"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                    <path
+                      d="M8.33333 5C7.44928 5 6.60143 5.35119 5.97631 5.97631C5.35119 6.60143 5 7.44928 5 8.33333V18.3333C5 19.2174 5.35119 20.0652 5.97631 20.6904C6.60143 21.3155 7.44928 21.6667 8.33333 21.6667C8.77536 21.6667 9.19928 21.8423 9.51184 22.1548C9.8244 22.4674 10 22.8913 10 23.3333V25C10 25.8841 9.64881 26.7319 9.02369 27.357C8.39857 27.9821 7.55072 28.3333 6.66667 28.3333C6.22464 28.3333 5.80072 28.5089 5.48816 28.8215C5.17559 29.134 5 29.558 5 30V33.3333C5 33.7754 5.17559 34.1993 5.48816 34.5118C5.80072 34.8244 6.22464 35 6.66667 35C9.31883 35 11.8624 33.9464 13.7377 32.0711C15.6131 30.1957 16.6667 27.6522 16.6667 25V8.33333C16.6667 7.44928 16.3155 6.60143 15.6904 5.97631C15.0652 5.35119 14.2174 5 13.3333 5H8.33333Z"
+                      stroke="#FFD6A7"
+                      stroke-width="3.33333"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                  </svg>
+                </span>
+                <div class="flex mb-4">
+                  <span class="text-orange-500 text-xl">★★★★★</span>
+                </div>
+                <p class="text-gray-700 mb-8">
+                  "From electronics to fashion, this is my go-to store for
+                  everything. Love the seamless shopping experience!"
+                </p>
+              </div>
+              <div class="flex items-center gap-4">
+                <img
+                  src="https://i.pravatar.cc/150?u=emma"
+                  alt="Emma Rodriguez"
+                  class="w-12 h-12 rounded-full object-cover"
+                />
+                <div>
+                  <h4 class="font-bold text-gray-900">Emma Rodriguez</h4>
+                  <p class="text-sm text-gray-500">Fashion Enthusiast</p>
                 </div>
               </div>
             </div>
