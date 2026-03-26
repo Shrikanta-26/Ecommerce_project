@@ -1,11 +1,28 @@
 @import "tailwindcss";
 
+/* Custom Breakpoint */
+@theme {
+ 
+  --breakpoint-*: initial;
+  --breakpoint-xsm: 360px;
+  --breakpoint-xs: 476px;
+  --breakpoint-sm: 640px;
+  --breakpoint-md: 768px;
+  --breakpoint-bs: 900px;
+  --breakpoint-lg: 1024px;
+  --breakpoint-xl: 1280px;
+  /* --breakpoint-2xl: 1550px; */
+}
+*{
+  box-sizing: border-box;
+}
 body {
   font-family: "Inter", sans-serif;
   background-color: #ffffff;
-  margin: auto;
 }
-.container-custom {
-  max-width: 1200px;
+
+
+.container-custom{
+  max-width: 1280px;
   margin: auto;
 }

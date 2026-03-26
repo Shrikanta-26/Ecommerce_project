@@ -1,12 +1,14 @@
 import React from "react";
 import Hero from "./Hero";
 import { NavLink } from "react-router-dom";
+import Footer from "./Footer";
+
 
 function Home() {
   return (
     <>
-      <Hero />
-      <section class="py-6 border-b border-black/10 ">
+      {/* <Hero /> */}
+      {/* <section class="py-6 border-b border-black/10 ">
         <div class="container-custom">
           <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10">
             <div class="flex space-x-4 w-76">
@@ -143,9 +145,9 @@ function Home() {
             </div>
           </div>
         </div>
-      </section>
+      </section> */}
 
-      <section class="pt-16 container-custom">
+      {/* <section class="pt-16 container-custom">
         <div class="text-center mb-10">
           <h2 class="text-3xl text-[#0A0A0A] mb-3">Shop by Categories</h2>
           <p class="text-[#4A5565] text-[16px]">
@@ -328,11 +330,11 @@ function Home() {
             <p class="text-[#4A5565] text-sm">3 Products</p>
           </div>
         </div>
-      </section>
+      </section> */}
 
       {/* New section */}
 
-      <section className="container-custom pt-30">
+      {/* <section className="container-custom pt-30">
         <div class="mb-8">
           <div class="flex items-center gap-2">
             <svg
@@ -468,10 +470,10 @@ function Home() {
             </div>
           </div>
         </div>
-      </section>
+      </section> */}
 
       {/* New Section? */}
-      <section class="mt-10  h-[800px]  bg-[linear-gradient(135deg,#FF6900_0%,#FB2C36_100%)] pt-10  text-white">
+      {/* <section class="mt-10  h-[800px]  bg-[linear-gradient(135deg,#FF6900_0%,#FB2C36_100%)] pt-10  text-white">
         <div class="text-center mb-12">
           <div class="flex items-center justify-center gap-2 text-4xl font-bold mb-2">
             <svg
@@ -491,7 +493,7 @@ function Home() {
                 />
               </g>
             </svg>
-            <h1 className="font-medium">Flash Sale</h1>
+            <h1 class="font-medium">Flash Sale</h1>
           </div>
           <p class="text-orange-100 text-lg mb-6">
             Limited time offers - Don't miss out!
@@ -661,11 +663,11 @@ function Home() {
             </div>
           </div>
         </div>
-      </section>
+      </section> */}
 
       {/* new section */}
 
-      <section class="container-custom mt-10 text-gray-900">
+      {/* <section class="container-custom mt-10 text-gray-900">
         <div class="mt-10">
           <div class="flex flex-col md:flex-row md:items-center justify-between gap-6 mb-10 pb-4">
             <h2 class="text-3xl font-normal">Hot Products</h2>
@@ -930,10 +932,10 @@ function Home() {
             </div>
           </div>
         </div>
-      </section>
+      </section> */}
 
       {/* Testimonial section */}
-      <section class="py-16 px-4 ">
+      {/* <section class="py-16 px-4 ">
         <div class="container-custom">
           <div class="text-center mb-12">
             <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
@@ -1088,7 +1090,153 @@ function Home() {
             </div>
           </div>
         </div>
-      </section>
+      </section> */}
+
+      {/* New Section */}
+
+      {/* <section class="py-6 px-4">
+        <div class="container-custom">
+          <div class="text-center mb-12">
+            <div class="flex items-center justify-center gap-2 mb-2">
+              <svg
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M15.477 12.8901L16.992 21.4161C17.009 21.5165 16.9949 21.6197 16.9516 21.7119C16.9084 21.8041 16.838 21.8808 16.7499 21.9319C16.6619 21.983 16.5603 22.006 16.4588 21.9978C16.3573 21.9897 16.2607 21.9507 16.182 21.8861L12.602 19.1991C12.4292 19.07 12.2192 19.0003 12.0035 19.0003C11.7878 19.0003 11.5778 19.07 11.405 19.1991L7.819 21.8851C7.74032 21.9496 7.64386 21.9885 7.54249 21.9967C7.44112 22.0049 7.33967 21.982 7.25166 21.931C7.16365 21.88 7.09327 21.8035 7.04991 21.7115C7.00656 21.6195 6.99228 21.5165 7.009 21.4161L8.523 12.8901"
+                  stroke="#FF6900"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+                <path
+                  d="M12 14C15.3137 14 18 11.3137 18 8C18 4.68629 15.3137 2 12 2C8.68629 2 6 4.68629 6 8C6 11.3137 8.68629 14 12 14Z"
+                  stroke="#FF6900"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+              <h2 class="text-3xl md:text-4xl font-bold text-gray-900">
+                Trusted Brands
+              </h2>
+            </div>
+            <p class="text-gray-500 text-lg">
+              We partner with the world's leading brands
+            </p>
+          </div>
+
+          <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-4">
+            <div class="bg-gray-50 rounded-xl py-8 px-4 flex items-center justify-center">
+              <span class="font-bold text-lg text-sky-500">TechVision</span>
+            </div>
+
+            <div class="bg-gray-50 rounded-xl py-8 px-4 flex items-center justify-center">
+              <span class="font-bold text-lg text-fuchsia-500">StyleCraft</span>
+            </div>
+
+            <div class="bg-gray-50 rounded-xl py-8 px-4 flex items-center justify-center">
+              <span class="font-bold text-lg text-orange-600">HomeEssence</span>
+            </div>
+
+            <div class="bg-gray-50 rounded-xl py-8 px-4 flex items-center justify-center">
+              <span class="font-bold text-lg text-emerald-500">UrbanLux</span>
+            </div>
+
+            <div class="bg-gray-50 rounded-xl py-8 px-4 flex items-center justify-center">
+              <span class="font-bold text-lg text-indigo-500">ModernSpace</span>
+            </div>
+
+            <div class="bg-gray-50 rounded-xl py-8 px-4 flex items-center justify-center">
+              <span class="font-bold text-lg text-pink-600">ElegantLife</span>
+            </div>
+          </div>
+        </div>
+      </section> */}
+
+      {/* New section */}
+      {/* <section class="bg-gray-50 py-10 px-4">
+        <div class="max-w-3xl m-auto rounded-[2.5rem] p-4 md:p-16 shadow-2xl text-center">
+          <div class="inline-flex items-center justify-center w-16 h-16 bg-orange-200 rounded-full mb-8">
+            <svg
+              width="24"
+              height="24"
+              viewBox="0 0 32 32"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M26.6667 5.3335H5.33335C3.86059 5.3335 2.66669 6.5274 2.66669 8.00016V24.0002C2.66669 25.4729 3.86059 26.6668 5.33335 26.6668H26.6667C28.1394 26.6668 29.3334 25.4729 29.3334 24.0002V8.00016C29.3334 6.5274 28.1394 5.3335 26.6667 5.3335Z"
+                stroke="#FF6900"
+                stroke-width="2.66667"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+              <path
+                d="M29.3334 9.3335L17.3734 16.9335C16.9617 17.1914 16.4858 17.3282 16 17.3282C15.5143 17.3282 15.0383 17.1914 14.6267 16.9335L2.66669 9.3335"
+                stroke="#FF6900"
+                stroke-width="2.66667"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+            </svg>
+          </div>
+
+          <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-6">
+            Subscribe to Our Newsletter
+          </h2>
+          <p class="text-gray-500 text-lg max-w-2xl mx-auto mb-10 leading-relaxed">
+            Get the latest updates on new products, exclusive deals, and special
+            offers delivered straight to your inbox!
+          </p>
+
+          <div class="flex flex-col md:flex-row items-center justify-center gap-4 max-w-lg mx-auto mb-8">
+            <input
+              type="email"
+              placeholder="Enter your email"
+              class="w-full px-6 py-4 rounded-xl border border-gray-200 focus:outline-none focus:ring-2 focus:ring-orange-500/20 focus:border-orange-500 transition-all text-gray-700"
+            />
+            <button class="w-full md:w-auto flex items-center justify-center gap-2 bg-orange-600 hover:bg-orange-700 text-white font-semibold px-8 py-4 rounded-xl transition-colors ">
+              Subscribe
+              <svg
+                width="16"
+                height="16"
+                viewBox="0 0 16 16"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M9.6907 14.4572C9.71603 14.5203 9.76006 14.5742 9.81688 14.6116C9.87371 14.6489 9.9406 14.668 10.0086 14.6663C10.0766 14.6646 10.1424 14.6421 10.1973 14.6018C10.2521 14.5616 10.2933 14.5055 10.3154 14.4412L14.6487 1.77454C14.67 1.71547 14.6741 1.65154 14.6604 1.59024C14.6468 1.52894 14.6159 1.4728 14.5715 1.42839C14.5271 1.38398 14.471 1.35314 14.4097 1.33947C14.3484 1.3258 14.2844 1.32987 14.2254 1.35121L1.5587 5.68454C1.49436 5.7066 1.43832 5.74782 1.39808 5.80266C1.35785 5.85749 1.33535 5.92332 1.33361 5.99131C1.33186 6.05931 1.35096 6.1262 1.38834 6.18303C1.42571 6.23985 1.47958 6.28388 1.5427 6.30921L6.82937 8.42921C6.99649 8.49612 7.14833 8.59618 7.27574 8.72336C7.40315 8.85054 7.50349 9.0022 7.5707 9.16921L9.6907 14.4572Z"
+                  stroke="white"
+                  stroke-width="1.33333"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+                <path
+                  d="M14.5693 1.43115L7.276 8.72382"
+                  stroke="white"
+                  stroke-width="1.33333"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+            </button>
+          </div>
+
+          <p class="text-gray-400 text-sm">
+            By subscribing, you agree to our{" "}
+            <NavLink to="/" className="underline">
+              Privacy Policy
+            </NavLink>{" "}
+            and consent to receive updates.
+          </p>
+        </div>
+      </section> */}
+      {/* <Footer /> */}
+
     </>
   );
 }

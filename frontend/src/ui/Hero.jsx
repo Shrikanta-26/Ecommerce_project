@@ -2,116 +2,116 @@ import React from "react";
 
 function HeroSection() {
   return (
-    <section className="relative border-b border-black/10 flex justify-center py-8 mb-4 bg-amber-50">
-      <div className="grid lg:grid-cols-2 gap-8 items-center container-custom ">
-        {/* LEFT CONTENT COLUMN */}
-        <div className="flex justify-start flex-col space-y-8">
-          {/* Badge */}
-          <div className="flex  px-2.5 py-4 h-9 w-fit items-center shrink-0 gap-2 rounded-full border border-[#FFD6A8] bg-white shadow-sm">
-            <span>
-              <svg
-                width="16"
-                height="16"
-                viewBox="0 0 16 16"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  d="M6.62467 10.3333C6.56515 10.1026 6.44489 9.89207 6.27641 9.72359C6.10793 9.55511 5.89738 9.43485 5.66667 9.37533L1.57667 8.32067C1.50689 8.30086 1.44547 8.25884 1.40174 8.20096C1.35801 8.14309 1.33435 8.07254 1.33435 8C1.33435 7.92746 1.35801 7.85691 1.40174 7.79904C1.44547 7.74117 1.50689 7.69914 1.57667 7.67933L5.66667 6.624C5.8973 6.56454 6.1078 6.44438 6.27627 6.27603C6.44474 6.10767 6.56504 5.89726 6.62467 5.66667L7.67933 1.57667C7.69894 1.50661 7.74092 1.4449 7.79888 1.40093C7.85684 1.35697 7.92759 1.33317 8.00033 1.33317C8.07308 1.33317 8.14383 1.35697 8.20179 1.40093C8.25974 1.4449 8.30173 1.50661 8.32133 1.57667L9.37533 5.66667C9.43485 5.89738 9.55511 6.10793 9.72359 6.27641C9.89207 6.44489 10.1026 6.56515 10.3333 6.62467L14.4233 7.67867C14.4937 7.69807 14.5557 7.74001 14.5999 7.79805C14.6441 7.8561 14.668 7.92704 14.668 8C14.668 8.07296 14.6441 8.1439 14.5999 8.20195C14.5557 8.25999 14.4937 8.30193 14.4233 8.32133L10.3333 9.37533C10.1026 9.43485 9.89207 9.55511 9.72359 9.72359C9.55511 9.89207 9.43485 10.1026 9.37533 10.3333L8.32067 14.4233C8.30106 14.4934 8.25908 14.5551 8.20112 14.5991C8.14316 14.643 8.07241 14.6668 7.99967 14.6668C7.92692 14.6668 7.85617 14.643 7.79821 14.5991C7.74026 14.5551 7.69827 14.4934 7.67867 14.4233L6.62467 10.3333Z"
-                  stroke="#FF6900"
-                  stroke-width="1.33333"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                />
-                <path
-                  d="M13.3333 2V4.66667"
-                  stroke="#FF6900"
-                  stroke-width="1.33333"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                />
-                <path
-                  d="M14.6667 3.33334H12"
-                  stroke="#FF6900"
-                  stroke-width="1.33333"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                />
-                <path
-                  d="M2.66666 11.3333V12.6667"
-                  stroke="#FF6900"
-                  stroke-width="1.33333"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                />
-                <path
-                  d="M3.33333 12H2"
-                  stroke="#FF6900"
-                  stroke-width="1.33333"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                />
-              </svg>
-            </span>
-            <p className="text-[#364153] font-sans text-sm font-normal leading-5">
-              Spring Collection 2026
-            </p>
-          </div>
-
-          {/* Main Heading */}
-          <h1 className="text-4xl md:text-6xl lg:text-[72px] font-medium leading-tight lg:leading-[79.2px] tracking-tight lg:tracking-[-1.8px]">
-            <p className="text-[#0A0A0A">Design Your</p>
-            <p className="text-[#FF6900]">Dream Home</p>
-          </h1>
-
-          {/* Subtext */}
-          <div className="flex flex-col gap-2">
-            <p className="text-[#4A5565] sm:text-lg lg:text-[18px] font-normal leading-relaxed lg:leading-[29.25px]">
-              Curated furniture that blends timeless elegance with modern
-              comfort. Transform every corner into your sanctuary.
-            </p>
-
-            {/* CTAs */}
-            <div className="flex flex-wrap gap-5 ">
-              <div className="flex cursor-pointer gap-4 justify-around items-center bg-[#FF6900] rounded-xl px-8 py-4 transition-all hover:bg-[#dd630c]">
-                <button className=" text-white font-bold cursor-pointer ">
-                  Explore Collection
-                </button>
-                <span className="">
-                  <svg
-                    width="16"
-                    height="16"
-                    viewBox="0 0 16 16"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path
-                      d="M3.33334 8H12.6667"
-                      stroke="white"
-                      stroke-width="1.33333"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                    />
-                    <path
-                      d="M8 3.33334L12.6667 8.00001L8 12.6667"
-                      stroke="white"
-                      stroke-width="1.33333"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                    />
-                  </svg>
-                </span>
-              </div>
-              <button className="border cursor-pointer border-slate-300 hover:bg-slate-200 text-slate-700 px-8 py-4 rounded-xl font-bold transition-all ">
-                View Lookbook
-              </button>
+    <>
+      <section className="relative border-b border-black/10 flex justify-center py-8 mb-4 bg-amber-50">
+        <div className="grid lg:grid-cols-2 gap-8 items-center container-custom ">
+          {/* LEFT CONTENT COLUMN */}
+          <div className="flex justify-start flex-col space-y-8">
+            {/* Badge */}
+            <div className="flex  px-2.5 py-4 h-9 w-fit items-center shrink-0 gap-2 rounded-full border border-[#FFD6A8] bg-white shadow-sm">
+              <span>
+                <svg
+                  width="16"
+                  height="16"
+                  viewBox="0 0 16 16"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M6.62467 10.3333C6.56515 10.1026 6.44489 9.89207 6.27641 9.72359C6.10793 9.55511 5.89738 9.43485 5.66667 9.37533L1.57667 8.32067C1.50689 8.30086 1.44547 8.25884 1.40174 8.20096C1.35801 8.14309 1.33435 8.07254 1.33435 8C1.33435 7.92746 1.35801 7.85691 1.40174 7.79904C1.44547 7.74117 1.50689 7.69914 1.57667 7.67933L5.66667 6.624C5.8973 6.56454 6.1078 6.44438 6.27627 6.27603C6.44474 6.10767 6.56504 5.89726 6.62467 5.66667L7.67933 1.57667C7.69894 1.50661 7.74092 1.4449 7.79888 1.40093C7.85684 1.35697 7.92759 1.33317 8.00033 1.33317C8.07308 1.33317 8.14383 1.35697 8.20179 1.40093C8.25974 1.4449 8.30173 1.50661 8.32133 1.57667L9.37533 5.66667C9.43485 5.89738 9.55511 6.10793 9.72359 6.27641C9.89207 6.44489 10.1026 6.56515 10.3333 6.62467L14.4233 7.67867C14.4937 7.69807 14.5557 7.74001 14.5999 7.79805C14.6441 7.8561 14.668 7.92704 14.668 8C14.668 8.07296 14.6441 8.1439 14.5999 8.20195C14.5557 8.25999 14.4937 8.30193 14.4233 8.32133L10.3333 9.37533C10.1026 9.43485 9.89207 9.55511 9.72359 9.72359C9.55511 9.89207 9.43485 10.1026 9.37533 10.3333L8.32067 14.4233C8.30106 14.4934 8.25908 14.5551 8.20112 14.5991C8.14316 14.643 8.07241 14.6668 7.99967 14.6668C7.92692 14.6668 7.85617 14.643 7.79821 14.5991C7.74026 14.5551 7.69827 14.4934 7.67867 14.4233L6.62467 10.3333Z"
+                    stroke="#FF6900"
+                    stroke-width="1.33333"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                  <path
+                    d="M13.3333 2V4.66667"
+                    stroke="#FF6900"
+                    stroke-width="1.33333"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                  <path
+                    d="M14.6667 3.33334H12"
+                    stroke="#FF6900"
+                    stroke-width="1.33333"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                  <path
+                    d="M2.66666 11.3333V12.6667"
+                    stroke="#FF6900"
+                    stroke-width="1.33333"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                  <path
+                    d="M3.33333 12H2"
+                    stroke="#FF6900"
+                    stroke-width="1.33333"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+              </span>
+              <p className="text-[#364153] font-sans text-sm font-normal leading-5">
+                Spring Collection 2026
+              </p>
             </div>
-          </div>
 
-          {/* Features Grid */}
-          <div className="flex  items-start shrink-0 gap-16 pt-4 border-t border-slate-100">
-            <div className="space-y-1">
-              
+            {/* Main Heading */}
+            <h1 className="text-4xl md:text-6xl lg:text-[72px] font-medium leading-tight lg:leading-[79.2px] tracking-tight lg:tracking-[-1.8px]">
+              <p className="text-[#0A0A0A">Design Your</p>
+              <p className="text-[#FF6900]">Dream Home</p>
+            </h1>
+
+            {/* Subtext */}
+            <div className="flex flex-col gap-2">
+              <p className="text-[#4A5565] sm:text-lg lg:text-[18px] font-normal leading-relaxed lg:leading-[29.25px]">
+                Curated furniture that blends timeless elegance with modern
+                comfort. Transform every corner into your sanctuary.
+              </p>
+
+              {/* CTAs */}
+              <div className="flex flex-wrap gap-5 ">
+                <div className="flex cursor-pointer gap-4 justify-around items-center bg-[#FF6900] rounded-xl px-8 py-4 transition-all hover:bg-[#dd630c]">
+                  <button className=" text-white font-bold cursor-pointer ">
+                    Explore Collection
+                  </button>
+                  <span className="">
+                    <svg
+                      width="16"
+                      height="16"
+                      viewBox="0 0 16 16"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M3.33334 8H12.6667"
+                        stroke="white"
+                        stroke-width="1.33333"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                      <path
+                        d="M8 3.33334L12.6667 8.00001L8 12.6667"
+                        stroke="white"
+                        stroke-width="1.33333"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                    </svg>
+                  </span>
+                </div>
+                <button className="border cursor-pointer border-slate-300 hover:bg-slate-200 text-slate-700 px-8 py-4 rounded-xl font-bold transition-all ">
+                  View Lookbook
+                </button>
+              </div>
+            </div>
+
+            {/* Features Grid */}
+            <div className="flex  items-start shrink-0 gap-16 pt-4 border-t border-slate-100">
+              <div className="space-y-1">
                 <svg
                   width="20"
                   height="20"
@@ -148,12 +148,11 @@ function HeroSection() {
                     stroke-linejoin="round"
                   />
                 </svg>
-            
-              <h4 className="font-bold text-[15px] ">Free Delivery</h4>
-              <p className="text-xs text-slate-400">On orders $50+</p>
-            </div>
-            <div className="space-y-1">
-            
+
+                <h4 className="font-bold text-[15px] ">Free Delivery</h4>
+                <p className="text-xs text-slate-400">On orders $50+</p>
+              </div>
+              <div className="space-y-1">
                 <svg
                   width="20"
                   height="20"
@@ -183,12 +182,11 @@ function HeroSection() {
                     </clipPath>
                   </defs>
                 </svg>
-              
-              <h4 className="font-bold text-[15px]">Premium Quality</h4>
-              <p className="text-xs text-slate-400">Handpicked items</p>
-            </div>
-            <div className="space-y-1">
-              
+
+                <h4 className="font-bold text-[15px]">Premium Quality</h4>
+                <p className="text-xs text-slate-400">Handpicked items</p>
+              </div>
+              <div className="space-y-1">
                 <svg
                   width="20"
                   height="20"
@@ -232,63 +230,65 @@ function HeroSection() {
                     stroke-linejoin="round"
                   />
                 </svg>
-              <h4 className="font-bold text-[15px]">New Arrivals</h4>
-              <p className="text-xs text-slate-400">Updated weekly</p>
-            </div>
-          </div>
-        </div>
-
-        {/* RIGHT IMAGE COLUMN */}
-        <div className="relative">
-          {/* Main Image Container */}
-          <div className="relative rounded-2xl overflow-hidden">
-            <img
-              src="https://images.unsplash.com/photo-1555041469-a586c61ea9bc?auto=format&fit=crop&q=80&w=2070"
-              alt="Luxury Living Room"
-              className="w-full h-[490px] rounded-2xl"
-            />
-
-            {/* Orange Discount Card (Bottom Left) */}
-            <div className="absolute bottom-4 left-4 bg-[#FF6B00] text-white p-7 rounded-[2rem] flex items-center gap-5 shadow-2xl">
-              <div className="text-4xl font-extrabold border-r border-white/20 pr-5 leading-none">
-                15%{" "}
-                <span className="block text-xs font-medium mt-1 tracking-widest opacity-90 uppercase">
-                  Off
-                </span>
-              </div>
-              <div className="pr-2">
-                <p className="font-bold text-lg leading-tight">First Order</p>
-                <p className="text-xs font-medium opacity-80 mt-0.5">
-                  Limited Time
-                </p>
-              </div>
-            </div>
-
-            {/* Featured Item Card (Top Right) */}
-            <div className="absolute top-3 right-3 bg-white  p-4 rounded-2xl shadow-2xl w-48 transition-transform duration-500 hover:-translate-y-1">
-              <div className="bg-stone-900 rounded-2xl aspect-square mb-4 flex items-center justify-center overflow-hidden">
-                <img
-                  src="https://images.unsplash.com/photo-1567016432779-094069958ea5?auto=format&fit=crop&q=80&w=800"
-                  alt="Sofa"
-                  className="h-full opacity-80"
-                />
-              </div>
-              <div className="px-1">
-                <p className="text-[10px] uppercase tracking-[0.15em] text-slate-400 font-bold mb-1">
-                  Featured Item
-                </p>
-                <h4 className="font-bold text-slate-800 text-lg">
-                  Modern Sofa
-                </h4>
-                <p className="text-[#FF6B00] font-extrabold text-lg mt-0.5">
-                  $899
-                </p>
+                <h4 className="font-bold text-[15px]">New Arrivals</h4>
+                <p className="text-xs text-slate-400">Updated weekly</p>
               </div>
             </div>
           </div>
+
+          {/* RIGHT IMAGE COLUMN */}
+          <div className="relative">
+            {/* Main Image Container */}
+            <div className="relative rounded-2xl overflow-hidden">
+              <img
+                src="https://images.unsplash.com/photo-1555041469-a586c61ea9bc?auto=format&fit=crop&q=80&w=2070"
+                alt="Luxury Living Room"
+                className="w-full h-[490px] rounded-2xl"
+              />
+
+              {/* Orange Discount Card (Bottom Left) */}
+              <div className="absolute bottom-4 left-4 bg-[#FF6B00] text-white p-7 rounded-[2rem] flex items-center gap-5 shadow-2xl">
+                <div className="text-4xl font-extrabold border-r border-white/20 pr-5 leading-none">
+                  15%{" "}
+                  <span className="block text-xs font-medium mt-1 tracking-widest opacity-90 uppercase">
+                    Off
+                  </span>
+                </div>
+                <div className="pr-2">
+                  <p className="font-bold text-lg leading-tight">First Order</p>
+                  <p className="text-xs font-medium opacity-80 mt-0.5">
+                    Limited Time
+                  </p>
+                </div>
+              </div>
+
+              {/* Featured Item Card (Top Right) */}
+              <div className="absolute top-3 right-3 bg-white  p-4 rounded-2xl shadow-2xl w-48 transition-transform duration-500 hover:-translate-y-1">
+                <div className="bg-stone-900 rounded-2xl aspect-square mb-4 flex items-center justify-center overflow-hidden">
+                  <img
+                    src="https://images.unsplash.com/photo-1567016432779-094069958ea5?auto=format&fit=crop&q=80&w=800"
+                    alt="Sofa"
+                    className="h-full opacity-80"
+                  />
+                </div>
+                <div className="px-1">
+                  <p className="text-[10px] uppercase tracking-[0.15em] text-slate-400 font-bold mb-1">
+                    Featured Item
+                  </p>
+                  <h4 className="font-bold text-slate-800 text-lg">
+                    Modern Sofa
+                  </h4>
+                  <p className="text-[#FF6B00] font-extrabold text-lg mt-0.5">
+                    $899
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
-      </div>
-    </section>
+      </section>
+
+    </>
   );
 }
 
