@@ -7,12 +7,12 @@ import Footer from "./Footer";
 function Home() {
   return (
     <>
-      {/* <Hero /> */}
-      {/* <section class="py-6 border-b border-black/10 ">
-        <div class="container-custom">
-          <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10">
-            <div class="flex space-x-4 w-76">
-              <div class="shrink-0 flex items-center justify-center w-12 h-12 bg-orange-100 rounded-xl">
+      <Hero />
+      <section className="py-4 px-2 border-b border-black/10 xsm:px-3 xs:px-4 sm:px-6">
+        <div className="container-custom">
+          <div className="grid grid-cols-1 xs:grid-cols-2 md:grid-cols-2 lg:grid-cols-4 gap-5">
+            <div className="flex space-x-4 w-full">
+              <div className="flex items-center justify-center w-10 h-10 bg-orange-100 rounded-xl">
                 <svg
                   width="24"
                   height="24"
@@ -58,15 +58,15 @@ function Home() {
                 </svg>
               </div>
               <div className="flex flex-col items-start">
-                <h3 class="text-lg font-bold text-slate-900 ">Free Shipping</h3>
-                <p class="text-sm text-slate-500 ">
+                <h3 className="text-[14px] font-bold text-slate-900 ">Free Shipping</h3>
+                <p className="text-[12px] text-slate-500 ">
                   Free delivery on orders over $50
                 </p>
               </div>
             </div>
 
-            <div class="flex space-x-4 w-76">
-              <div class="shrink-0 flex items-center justify-center w-12 h-12 bg-orange-100 rounded-xl">
+            <div className="flex space-x-4 w-full">
+              <div className="flex items-center justify-center  w-10 h-10 bg-orange-100 rounded-xl">
                 <svg
                   width="24"
                   height="24"
@@ -84,13 +84,13 @@ function Home() {
                 </svg>
               </div>
               <div>
-                <h3 class="text-lg font-bold text-slate-900">Secure Payment</h3>
-                <p class="text-sm text-slate-500">100% secure transactions</p>
+                <h3 className="text-[14px] font-bold text-slate-900">Secure Payment</h3>
+                <p className="text-[12px] text-slate-500">100% secure transactions</p>
               </div>
             </div>
 
-            <div class="flex space-x-4 w-76">
-              <div class="shrink-0 flex items-center justify-center w-12 h-12 bg-orange-100 rounded-xl">
+            <div className="flex space-x-4 w-full">
+              <div className=" flex items-center justify-center  w-10 h-10 bg-orange-100 rounded-xl">
                 <svg
                   width="20"
                   height="20"
@@ -108,13 +108,13 @@ function Home() {
                 </svg>
               </div>
               <div>
-                <h3 class="text-lg font-bold text-slate-900">24/7 Support</h3>
-                <p class="text-sm text-slate-500">Dedicated customer service</p>
+                <h3 className="text-[14px] font-bold text-slate-900">24/7 Support</h3>
+                <p className="text-[12px] text-slate-500">Dedicated customer service</p>
               </div>
             </div>
 
-            <div class="flex space-x-4 w-76">
-              <div class="shrink-0 flex items-center justify-center w-12 h-12 bg-orange-100 rounded-xl">
+            <div className="flex space-x-4 w-full">
+              <div className="flex items-center justify-center  w-10 h-10 bg-orange-100 rounded-xl">
                 <svg
                   width="24"
                   height="24"
@@ -139,32 +139,32 @@ function Home() {
                 </svg>
               </div>
               <div>
-                <h3 class="text-lg font-bold text-slate-900">Easy Returns</h3>
-                <p class="text-sm text-slate-500">30-day return policy</p>
+                <h3 className="text-[14px] font-bold text-slate-900">Easy Returns</h3>
+                <p className="text-[12px] text-slate-500">30-day return policy</p>
               </div>
             </div>
           </div>
         </div>
-      </section> */}
+      </section>
 
-      {/* <section class="pt-16 container-custom">
-        <div class="text-center mb-10">
-          <h2 class="text-3xl text-[#0A0A0A] mb-3">Shop by Categories</h2>
-          <p class="text-[#4A5565] text-[16px]">
+      {/* <section className="pt-16 container-custom xsm:px-3 xs:px-4 sm:px-6">
+        <div className="text-center mb-10">
+          <h2 className="text-3xl text-[#0A0A0A] mb-3">Shop by Categories</h2>
+          <p className="text-[#4A5565] text-[16px]">
             Explore our diverse collection of products
           </p>
         </div>
 
-        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-6 ">
-          <div class="border shadow bg-[#F9FAFB] border-[#F1F5F9] rounded-2xl p-7 flex flex-col items-center group cursor-pointer transition-all hover:shadow-sm">
-            <div class="w-full aspect-square rounded-2xl overflow-hidden mb-4">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-6 ">
+          <div className="border shadow bg-[#F9FAFB] border-[#F1F5F9] rounded-2xl p-7 flex flex-col items-center group cursor-pointer transition-all hover:shadow-sm">
+            <div className="w-full aspect-square rounded-2xl overflow-hidden mb-4">
               <img
                 src="https://images.unsplash.com/photo-1555041469-a586c61ea9bc?auto=format&fit=crop&q=80&w=500"
                 alt="Furniture"
-                class="w-full aspect-square object-cover group-hover:scale-105 transition-transform duration-500"
+                className="w-full aspect-square object-cover group-hover:scale-105 transition-transform duration-500"
               />
             </div>
-            <div class="flex items-center gap-2 mb-1">
+            <div className="flex items-center gap-2 mb-1">
               <svg
                 width="20"
                 height="20"
@@ -201,20 +201,20 @@ function Home() {
                   stroke-linejoin="round"
                 />
               </svg>
-              <span class="font-bold text-[#101828] text-lg">Furniture</span>
+              <span className="font-bold text-[#101828] text-lg">Furniture</span>
             </div>
-            <p class="text-[#4A5565] text-sm">11 Products</p>
+            <p className="text-[#4A5565] text-sm">11 Products</p>
           </div>
 
-          <div class="border shadow bg-[#F9FAFB] border-[#F1F5F9] rounded-2xl p-7 flex flex-col items-center group cursor-pointer transition-all hover:shadow-sm">
-            <div class="w-full aspect-square rounded-2xl overflow-hidden mb-4">
+          <div className="border shadow bg-[#F9FAFB] border-[#F1F5F9] rounded-2xl p-7 flex flex-col items-center group cursor-pointer transition-all hover:shadow-sm">
+            <div className="w-full aspect-square rounded-2xl overflow-hidden mb-4">
               <img
                 src="https://images.unsplash.com/photo-1505740420928-5e560c06d30e?auto=format&fit=crop&q=80&w=500"
                 alt="Electronics"
-                class="w-full aspect-square object-cover group-hover:scale-105 transition-transform duration-500"
+                className="w-full aspect-square object-cover group-hover:scale-105 transition-transform duration-500"
               />
             </div>
-            <div class="flex items-center gap-2 mb-1">
+            <div className="flex items-center gap-2 mb-1">
               <svg
                 width="20"
                 height="20"
@@ -230,20 +230,20 @@ function Home() {
                   stroke-linejoin="round"
                 />
               </svg>
-              <span class="font-bold text-[#101828] text-lg">Electronics</span>
+              <span className="font-bold text-[#101828] text-lg">Electronics</span>
             </div>
-            <p class="text-[#4A5565] text-sm">3 Products</p>
+            <p className="text-[#4A5565] text-sm">3 Products</p>
           </div>
 
-          <div class="border shadow bg-[#F9FAFB] border-[#F1F5F9] rounded-2xl p-7 flex flex-col items-center group cursor-pointer transition-all hover:shadow-sm">
-            <div class="w-full aspect-square rounded-2xl overflow-hidden mb-4">
+          <div className="border shadow bg-[#F9FAFB] border-[#F1F5F9] rounded-2xl p-7 flex flex-col items-center group cursor-pointer transition-all hover:shadow-sm">
+            <div className="w-full aspect-square rounded-2xl overflow-hidden mb-4">
               <img
                 src="https://images.unsplash.com/photo-1542291026-7eec264c27ff?auto=format&fit=crop&q=80&w=500"
                 alt="Fashion"
-                class="w-full aspect-square object-cover group-hover:scale-105 transition-transform duration-500"
+                className="w-full aspect-square object-cover group-hover:scale-105 transition-transform duration-500"
               />
             </div>
-            <div class="flex items-center gap-2 mb-1">
+            <div className="flex items-center gap-2 mb-1">
               <svg
                 width="20"
                 height="20"
@@ -259,20 +259,20 @@ function Home() {
                   stroke-linejoin="round"
                 />
               </svg>
-              <span class="font-bold text-[#101828] text-lg">Fashion</span>
+              <span className="font-bold text-[#101828] text-lg">Fashion</span>
             </div>
-            <p class="text-[#4A5565] text-sm">3 Products</p>
+            <p className="text-[#4A5565] text-sm">3 Products</p>
           </div>
 
-          <div class="border shadow bg-[#F9FAFB] border-[#F1F5F9] rounded-2xl p-7 flex flex-col items-center group cursor-pointer transition-all hover:shadow-sm">
-            <div class="w-full aspect-square rounded-2xl overflow-hidden mb-4">
+          <div className="border shadow bg-[#F9FAFB] border-[#F1F5F9] rounded-2xl p-7 flex flex-col items-center group cursor-pointer transition-all hover:shadow-sm">
+            <div className="w-full aspect-square rounded-2xl overflow-hidden mb-4">
               <img
                 src="https://images.unsplash.com/photo-1581781870027-04212e231e96?auto=format&fit=crop&q=80&w=500"
                 alt="Home Decor"
-                class="w-full aspect-square object-cover group-hover:scale-105 transition-transform duration-500"
+                className="w-full aspect-square object-cover group-hover:scale-105 transition-transform duration-500"
               />
             </div>
-            <div class="flex items-center gap-2 mb-1">
+            <div className="flex items-center gap-2 mb-1">
               <svg
                 width="20"
                 height="20"
@@ -302,22 +302,22 @@ function Home() {
                   stroke-linejoin="round"
                 />
               </svg>
-              <span class="font-bold text-[#101828] text-lg">Home Decor</span>
+              <span className="font-bold text-[#101828] text-lg">Home Decor</span>
             </div>
-            <p class="text-[#4A5565] text-sm">3 Products</p>
+            <p className="text-[#4A5565] text-sm">3 Products</p>
           </div>
 
-          <div class="border shadow bg-[#F9FAFB] border-[#F1F5F9] rounded-2xl p-7 flex flex-col items-center group cursor-pointer transition-all hover:shadow-sm">
-            <div class="w-full aspect-square rounded-2xl overflow-hidden mb-4">
+          <div className="border shadow bg-[#F9FAFB] border-[#F1F5F9] rounded-2xl p-7 flex flex-col items-center group cursor-pointer transition-all hover:shadow-sm">
+            <div className="w-full aspect-square rounded-2xl overflow-hidden mb-4">
               <img
                 src="https://images.unsplash.com/photo-1523275335684-37898b6baf30?auto=format&fit=crop&q=80&w=500"
                 alt="Accessories"
-                class="w-full aspect-square object-cover group-hover:scale-105 transition-transform duration-500"
+                className="w-full aspect-square object-cover group-hover:scale-105 transition-transform duration-500"
               />
             </div>
-            <div class="flex items-center gap-2 mb-1">
+            <div className="flex items-center gap-2 mb-1">
               <svg
-                class="w-5 h-5 text-[#FF6B00]"
+                className="w-5 h-5 text-[#FF6B00]"
                 fill="none"
                 stroke="currentColor"
                 stroke-width="2"
@@ -325,18 +325,18 @@ function Home() {
               >
                 <path d="M16 11V7a4 4 0 00-8 0v4M5 9h14l1 12H4L5 9z"></path>
               </svg>
-              <span class="font-bold text-[#101828] text-lg">Accessories</span>
+              <span className="font-bold text-[#101828] text-lg">Accessories</span>
             </div>
-            <p class="text-[#4A5565] text-sm">3 Products</p>
+            <p className="text-[#4A5565] text-sm">3 Products</p>
           </div>
         </div>
       </section> */}
 
       {/* New section */}
 
-      {/* <section className="container-custom pt-30">
-        <div class="mb-8">
-          <div class="flex items-center gap-2">
+      {/* <section classNameName="container-custom pt-30 xsm:px-3 xs:px-4 sm:px-6">
+        <div className="mb-8">
+          <div className="flex items-center gap-2">
             <svg
               width="24"
               height="24"
@@ -359,113 +359,113 @@ function Home() {
                 stroke-linejoin="round"
               />
             </svg>
-            <h2 class="text-2xl font-bold text-gray-900">Trending Now</h2>
+            <h2 className="text-2xl font-bold text-gray-900">Trending Now</h2>
           </div>
-          <p class="text-gray-500 mt-1">Most popular items this week</p>
+          <p className="text-gray-500 mt-1">Most popular items this week</p>
         </div>
 
-        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
-          <div class="border rounded-2xl border-gray-100 shadow-2xl">
-            <div class="relative aspect-square p-4">
-              <span class="absolute top-2 right-4 bg-orange-500 text-[10px] text-white font-bold px-2 py-1 rounded uppercase tracking-wider z-10">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+          <div className="border rounded-2xl border-gray-100 shadow-2xl">
+            <div className="relative aspect-square p-4">
+              <span className="absolute top-2 right-4 bg-orange-500 text-[10px] text-white font-bold px-2 py-1 rounded uppercase tracking-wider z-10">
                 Hot
               </span>
               <img
                 src="https://images.unsplash.com/photo-1592078615290-033ee584e267?auto=format&fit=crop&w=500&q=80"
                 alt="Chair"
-                class="w-full h-full object-contain"
+                className="w-full h-full object-contain"
               />
             </div>
 
-            <div class="p-4 bg-[#F8F9FA] border-t border-gray-50">
-              <div class="flex items-center gap-1 mb-2">
-                <div class="flex text-yellow-400 text-xs">★★★★★</div>
-                <span class="text-[10px] text-gray-400">(8 reviews)</span>
+            <div className="p-4 bg-[#F8F9FA] border-t border-gray-50">
+              <div className="flex items-center gap-1 mb-2">
+                <div className="flex text-yellow-400 text-xs">★★★★★</div>
+                <span className="text-[10px] text-gray-400">(8 reviews)</span>
               </div>
-              <h3 class="text-sm font-semibold text-gray-800 mb-2">
+              <h3 className="text-sm font-semibold text-gray-800 mb-2">
                 Aqui Glades Accent Chair
               </h3>
-              <div class="flex items-center gap-2">
-                <span class="text-xs text-gray-400 line-through">$30.00</span>
-                <span class="text-base font-bold text-orange-600">$25.00</span>
+              <div className="flex items-center gap-2">
+                <span className="text-xs text-gray-400 line-through">$30.00</span>
+                <span className="text-base font-bold text-orange-600">$25.00</span>
               </div>
             </div>
           </div>
-          <div class="border rounded-2xl border-gray-100 shadow-2xl">
-            <div class="relative aspect-square p-4">
-              <span class="absolute top-2 right-4 bg-orange-500 text-[10px] text-white font-bold px-2 py-1 rounded uppercase tracking-wider z-10">
+          <div className="border rounded-2xl border-gray-100 shadow-2xl">
+            <div className="relative aspect-square p-4">
+              <span className="absolute top-2 right-4 bg-orange-500 text-[10px] text-white font-bold px-2 py-1 rounded uppercase tracking-wider z-10">
                 Hot
               </span>
               <img
                 src="https://images.unsplash.com/photo-1592078615290-033ee584e267?auto=format&fit=crop&w=500&q=80"
                 alt="Chair"
-                class="w-full h-full object-contain"
+                className="w-full h-full object-contain"
               />
             </div>
 
-            <div class="p-4 bg-[#F8F9FA] border-t border-gray-50">
-              <div class="flex items-center gap-1 mb-2">
-                <div class="flex text-yellow-400 text-xs">★★★★★</div>
-                <span class="text-[10px] text-gray-400">(8 reviews)</span>
+            <div className="p-4 bg-[#F8F9FA] border-t border-gray-50">
+              <div className="flex items-center gap-1 mb-2">
+                <div className="flex text-yellow-400 text-xs">★★★★★</div>
+                <span className="text-[10px] text-gray-400">(8 reviews)</span>
               </div>
-              <h3 class="text-sm font-semibold text-gray-800 mb-2">
+              <h3 className="text-sm font-semibold text-gray-800 mb-2">
                 Aqui Glades Accent Chair
               </h3>
-              <div class="flex items-center gap-2">
-                <span class="text-xs text-gray-400 line-through">$30.00</span>
-                <span class="text-base font-bold text-orange-600">$25.00</span>
+              <div className="flex items-center gap-2">
+                <span className="text-xs text-gray-400 line-through">$30.00</span>
+                <span className="text-base font-bold text-orange-600">$25.00</span>
               </div>
             </div>
           </div>
-          <div class="border rounded-2xl border-gray-100 shadow-2xl">
-            <div class="relative aspect-square p-4">
-              <span class="absolute top-2 right-4 bg-orange-500 text-[10px] text-white font-bold px-2 py-1 rounded uppercase tracking-wider z-10">
+          <div className="border rounded-2xl border-gray-100 shadow-2xl">
+            <div className="relative aspect-square p-4">
+              <span className="absolute top-2 right-4 bg-orange-500 text-[10px] text-white font-bold px-2 py-1 rounded uppercase tracking-wider z-10">
                 Hot
               </span>
               <img
                 src="https://images.unsplash.com/photo-1592078615290-033ee584e267?auto=format&fit=crop&w=500&q=80"
                 alt="Chair"
-                class="w-full h-full object-contain"
+                className="w-full h-full object-contain"
               />
             </div>
 
-            <div class="p-4 bg-[#F8F9FA] border-t border-gray-50">
-              <div class="flex items-center gap-1 mb-2">
-                <div class="flex text-yellow-400 text-xs">★★★★★</div>
-                <span class="text-[10px] text-gray-400">(8 reviews)</span>
+            <div className="p-4 bg-[#F8F9FA] border-t border-gray-50">
+              <div className="flex items-center gap-1 mb-2">
+                <div className="flex text-yellow-400 text-xs">★★★★★</div>
+                <span className="text-[10px] text-gray-400">(8 reviews)</span>
               </div>
-              <h3 class="text-sm font-semibold text-gray-800 mb-2">
+              <h3 className="text-sm font-semibold text-gray-800 mb-2">
                 Aqui Glades Accent Chair
               </h3>
-              <div class="flex items-center gap-2">
-                <span class="text-xs text-gray-400 line-through">$30.00</span>
-                <span class="text-base font-bold text-orange-600">$25.00</span>
+              <div className="flex items-center gap-2">
+                <span className="text-xs text-gray-400 line-through">$30.00</span>
+                <span className="text-base font-bold text-orange-600">$25.00</span>
               </div>
             </div>
           </div>
-          <div class="border rounded-2xl border-gray-100 shadow-2xl">
-            <div class="relative aspect-square p-4">
-              <span class="absolute top-2 right-4 bg-orange-500 text-[10px] text-white font-bold px-2 py-1 rounded uppercase tracking-wider z-10">
+          <div className="border rounded-2xl border-gray-100 shadow-2xl">
+            <div className="relative aspect-square p-4">
+              <span className="absolute top-2 right-4 bg-orange-500 text-[10px] text-white font-bold px-2 py-1 rounded uppercase tracking-wider z-10">
                 Hot
               </span>
               <img
                 src="https://images.unsplash.com/photo-1592078615290-033ee584e267?auto=format&fit=crop&w=500&q=80"
                 alt="Chair"
-                class="w-full h-full object-contain"
+                className="w-full h-full object-contain"
               />
             </div>
 
-            <div class="p-4 bg-[#F8F9FA] border-t border-gray-50">
-              <div class="flex items-center gap-1 mb-2">
-                <div class="flex text-yellow-400 text-xs">★★★★★</div>
-                <span class="text-[10px] text-gray-400">(8 reviews)</span>
+            <div className="p-4 bg-[#F8F9FA] border-t border-gray-50">
+              <div className="flex items-center gap-1 mb-2">
+                <div className="flex text-yellow-400 text-xs">★★★★★</div>
+                <span className="text-[10px] text-gray-400">(8 reviews)</span>
               </div>
-              <h3 class="text-sm font-semibold text-gray-800 mb-2">
+              <h3 className="text-sm font-semibold text-gray-800 mb-2">
                 Aqui Glades Accent Chair
               </h3>
-              <div class="flex items-center gap-2">
-                <span class="text-xs text-gray-400 line-through">$30.00</span>
-                <span class="text-base font-bold text-orange-600">$25.00</span>
+              <div className="flex items-center gap-2">
+                <span className="text-xs text-gray-400 line-through">$30.00</span>
+                <span className="text-base font-bold text-orange-600">$25.00</span>
               </div>
             </div>
           </div>
@@ -473,9 +473,9 @@ function Home() {
       </section> */}
 
       {/* New Section? */}
-      {/* <section class="mt-10  h-[800px]  bg-[linear-gradient(135deg,#FF6900_0%,#FB2C36_100%)] pt-10  text-white">
-        <div class="text-center mb-12">
-          <div class="flex items-center justify-center gap-2 text-4xl font-bold mb-2">
+      {/* <section className="mt-10  h-[800px]  bg-[linear-gradient(135deg,#FF6900_0%,#FB2C36_100%)] pt-10 xsm:px-3 xs:px-4 sm:px-6">
+        <div className="text-center mb-12">
+          <div className="flex items-center justify-center gap-2 text-4xl font-bold mb-2">
             <svg
               width="32"
               height="32"
@@ -493,14 +493,14 @@ function Home() {
                 />
               </g>
             </svg>
-            <h1 class="font-medium">Flash Sale</h1>
+            <h1 className="font-medium">Flash Sale</h1>
           </div>
-          <p class="text-orange-100 text-lg mb-6">
+          <p className="text-orange-100 text-lg mb-6">
             Limited time offers - Don't miss out!
           </p>
 
-          <div class="flex flex-col items-center gap-4 ">
-            <div class="flex items-center gap-2 text-sm font-medium">
+          <div className="flex flex-col items-center gap-4 ">
+            <div className="flex items-center gap-2 text-sm font-medium">
               <svg
                 width="20"
                 height="20"
@@ -526,30 +526,30 @@ function Home() {
               <span>Ends in:</span>
             </div>
 
-            <div class="flex items-center gap-4 text-white">
-              <div class="flex flex-col items-center">
-                <div class="bg-white/20  rounded-lg w-16 h-16 flex items-center justify-center text-2xl font-bold">
+            <div className="flex items-center gap-4 text-white">
+              <div className="flex flex-col items-center">
+                <div className="bg-white/20  rounded-lg w-16 h-16 flex items-center justify-center text-2xl font-bold">
                   12
                 </div>
-                <span class="text-[10px] uppercase mt-2 tracking-widest opacity-90">
+                <span className="text-[10px] uppercase mt-2 tracking-widest opacity-90">
                   Hours
                 </span>
               </div>
-              <span class="text-2xl font-bold pb-6">:</span>
-              <div class="flex flex-col items-center">
-                <div class="bg-white/20  rounded-lg w-16 h-16 flex items-center justify-center text-2xl font-bold">
+              <span className="text-2xl font-bold pb-6">:</span>
+              <div className="flex flex-col items-center">
+                <div className="bg-white/20  rounded-lg w-16 h-16 flex items-center justify-center text-2xl font-bold">
                   34
                 </div>
-                <span class="text-[10px] uppercase mt-2 tracking-widest opacity-90">
+                <span className="text-[10px] uppercase mt-2 tracking-widest opacity-90">
                   Minutes
                 </span>
               </div>
-              <span class="text-2xl font-bold pb-6">:</span>
-              <div class="flex flex-col items-center">
-                <div class="bg-white/20 rounded-lg w-16 h-16 flex items-center justify-center text-2xl font-bold">
+              <span className="text-2xl font-bold pb-6">:</span>
+              <div className="flex flex-col items-center">
+                <div className="bg-white/20 rounded-lg w-16 h-16 flex items-center justify-center text-2xl font-bold">
                   25
                 </div>
-                <span class="text-[10px] uppercase mt-2 tracking-widest opacity-90">
+                <span className="text-[10px] uppercase mt-2 tracking-widest opacity-90">
                   Seconds
                 </span>
               </div>
@@ -557,108 +557,108 @@ function Home() {
           </div>
         </div>
 
-        <div class="container-custom  grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
-          <div class="border bg-white rounded-2xl border-gray-100 shadow-2xl">
-            <div class="relative aspect-square p-4">
-              <span class="absolute top-2 right-4 bg-orange-500 text-[10px] text-white font-bold px-2 py-1 rounded uppercase tracking-wider z-10">
+        <div className="container-custom  grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+          <div className="border bg-white rounded-2xl border-gray-100 shadow-2xl">
+            <div className="relative aspect-square p-4">
+              <span className="absolute top-2 right-4 bg-orange-500 text-[10px] text-white font-bold px-2 py-1 rounded uppercase tracking-wider z-10">
                 Hot
               </span>
               <img
                 src="https://images.unsplash.com/photo-1592078615290-033ee584e267?auto=format&fit=crop&w=500&q=80"
                 alt="Chair"
-                class="w-full h-full object-contain"
+                className="w-full h-full object-contain"
               />
             </div>
 
-            <div class="p-4 rounded-b-2xl bg-[#F8F9FA] border-t border-gray-50">
-              <div class="flex items-center gap-1 mb-2">
-                <div class="flex text-yellow-400 text-xs">★★★★★</div>
-                <span class="text-[10px] text-gray-400">(8 reviews)</span>
+            <div className="p-4 rounded-b-2xl bg-[#F8F9FA] border-t border-gray-50">
+              <div className="flex items-center gap-1 mb-2">
+                <div className="flex text-yellow-400 text-xs">★★★★★</div>
+                <span className="text-[10px] text-gray-400">(8 reviews)</span>
               </div>
-              <h3 class="text-sm font-semibold text-gray-800 mb-2">
+              <h3 className="text-sm font-semibold text-gray-800 mb-2">
                 Aqui Glades Accent Chair
               </h3>
-              <div class="flex items-center gap-2">
-                <span class="text-xs text-gray-400 line-through">$30.00</span>
-                <span class="text-base font-bold text-orange-600">$25.00</span>
+              <div className="flex items-center gap-2">
+                <span className="text-xs text-gray-400 line-through">$30.00</span>
+                <span className="text-base font-bold text-orange-600">$25.00</span>
               </div>
             </div>
           </div>
-          <div class="border bg-white rounded-2xl border-gray-100 shadow-2xl">
-            <div class="relative aspect-square p-4">
-              <span class="absolute top-2 right-4 bg-orange-500 text-[10px] text-white font-bold px-2 py-1 rounded uppercase tracking-wider z-10">
+          <div className="border bg-white rounded-2xl border-gray-100 shadow-2xl">
+            <div className="relative aspect-square p-4">
+              <span className="absolute top-2 right-4 bg-orange-500 text-[10px] text-white font-bold px-2 py-1 rounded uppercase tracking-wider z-10">
                 Hot
               </span>
               <img
                 src="https://images.unsplash.com/photo-1592078615290-033ee584e267?auto=format&fit=crop&w=500&q=80"
                 alt="Chair"
-                class="w-full h-full object-contain"
+                className="w-full h-full object-contain"
               />
             </div>
 
-            <div class="p-4 rounded-b-2xl bg-[#F8F9FA] border-t border-gray-50">
-              <div class="flex items-center gap-1 mb-2">
-                <div class="flex text-yellow-400 text-xs">★★★★★</div>
-                <span class="text-[10px] text-gray-400">(8 reviews)</span>
+            <div className="p-4 rounded-b-2xl bg-[#F8F9FA] border-t border-gray-50">
+              <div className="flex items-center gap-1 mb-2">
+                <div className="flex text-yellow-400 text-xs">★★★★★</div>
+                <span className="text-[10px] text-gray-400">(8 reviews)</span>
               </div>
-              <h3 class="text-sm font-semibold text-gray-800 mb-2">
+              <h3 className="text-sm font-semibold text-gray-800 mb-2">
                 Aqui Glades Accent Chair
               </h3>
-              <div class="flex items-center gap-2">
-                <span class="text-xs text-gray-400 line-through">$30.00</span>
-                <span class="text-base font-bold text-orange-600">$25.00</span>
+              <div className="flex items-center gap-2">
+                <span className="text-xs text-gray-400 line-through">$30.00</span>
+                <span className="text-base font-bold text-orange-600">$25.00</span>
               </div>
             </div>
           </div>
-          <div class="border bg-white rounded-2xl border-gray-100 shadow-2xl">
-            <div class="relative aspect-square p-4">
-              <span class="absolute top-2 right-4 bg-orange-500 text-[10px] text-white font-bold px-2 py-1 rounded uppercase tracking-wider z-10">
+          <div className="border bg-white rounded-2xl border-gray-100 shadow-2xl">
+            <div className="relative aspect-square p-4">
+              <span className="absolute top-2 right-4 bg-orange-500 text-[10px] text-white font-bold px-2 py-1 rounded uppercase tracking-wider z-10">
                 Hot
               </span>
               <img
                 src="https://images.unsplash.com/photo-1592078615290-033ee584e267?auto=format&fit=crop&w=500&q=80"
                 alt="Chair"
-                class="w-full h-full object-contain"
+                className="w-full h-full object-contain"
               />
             </div>
 
-            <div class="p-4 rounded-b-2xl bg-[#F8F9FA] border-t border-gray-50">
-              <div class="flex items-center gap-1 mb-2">
-                <div class="flex text-yellow-400 text-xs">★★★★★</div>
-                <span class="text-[10px] text-gray-400">(8 reviews)</span>
+            <div className="p-4 rounded-b-2xl bg-[#F8F9FA] border-t border-gray-50">
+              <div className="flex items-center gap-1 mb-2">
+                <div className="flex text-yellow-400 text-xs">★★★★★</div>
+                <span className="text-[10px] text-gray-400">(8 reviews)</span>
               </div>
-              <h3 class="text-sm font-semibold text-gray-800 mb-2">
+              <h3 className="text-sm font-semibold text-gray-800 mb-2">
                 Aqui Glades Accent Chair
               </h3>
-              <div class="flex items-center gap-2">
-                <span class="text-xs text-gray-400 line-through">$30.00</span>
-                <span class="text-base font-bold text-orange-600">$25.00</span>
+              <div className="flex items-center gap-2">
+                <span className="text-xs text-gray-400 line-through">$30.00</span>
+                <span className="text-base font-bold text-orange-600">$25.00</span>
               </div>
             </div>
           </div>
-          <div class="border  bg-white rounded-2xl border-gray-100 shadow-2xl">
-            <div class="relative aspect-square p-4">
-              <span class="absolute top-2 right-4 bg-orange-500 text-[10px] text-white font-bold px-2 py-1 rounded uppercase tracking-wider z-10">
+          <div className="border  bg-white rounded-2xl border-gray-100 shadow-2xl">
+            <div className="relative aspect-square p-4">
+              <span className="absolute top-2 right-4 bg-orange-500 text-[10px] text-white font-bold px-2 py-1 rounded uppercase tracking-wider z-10">
                 Hot
               </span>
               <img
                 src="https://images.unsplash.com/photo-1592078615290-033ee584e267?auto=format&fit=crop&w=500&q=80"
                 alt="Chair"
-                class="w-full h-full object-contain"
+                className="w-full h-full object-contain"
               />
             </div>
 
-            <div class="p-4 rounded-b-2xl bg-[#F8F9FA] border-t border-gray-50">
-              <div class="flex items-center gap-1 mb-2">
-                <div class="flex text-yellow-400 text-xs">★★★★★</div>
-                <span class="text-[10px] text-gray-400">(8 reviews)</span>
+            <div className="p-4 rounded-b-2xl bg-[#F8F9FA] border-t border-gray-50">
+              <div className="flex items-center gap-1 mb-2">
+                <div className="flex text-yellow-400 text-xs">★★★★★</div>
+                <span className="text-[10px] text-gray-400">(8 reviews)</span>
               </div>
-              <h3 class="text-sm font-semibold text-gray-800 mb-2">
+              <h3 className="text-sm font-semibold text-gray-800 mb-2">
                 Aqui Glades Accent Chair
               </h3>
-              <div class="flex items-center gap-2">
-                <span class="text-xs text-gray-400 line-through">$30.00</span>
-                <span class="text-base font-bold text-orange-600">$25.00</span>
+              <div className="flex items-center gap-2">
+                <span className="text-xs text-gray-400 line-through">$30.00</span>
+                <span className="text-base font-bold text-orange-600">$25.00</span>
               </div>
             </div>
           </div>
@@ -667,29 +667,29 @@ function Home() {
 
       {/* new section */}
 
-      {/* <section class="container-custom mt-10 text-gray-900">
-        <div class="mt-10">
-          <div class="flex flex-col md:flex-row md:items-center justify-between gap-6 mb-10 pb-4">
-            <h2 class="text-3xl font-normal">Hot Products</h2>
+      {/* <section className="container-custom mt-10 text-gray-900 xsm:px-3 xs:px-4 sm:px-6">
+        <div className="mt-10">
+          <div className="flex flex-col md:flex-row md:items-center justify-between gap-6 mb-10 pb-4">
+            <h2 className="text-3xl font-normal">Hot Products</h2>
 
-            <div class="flex items-center gap-6">
-              <nav class="flex items-center gap-6 text-[11px] font-bold uppercase tracking-wider text-gray-400">
-                <NavLink to="/" class="hover:text-orange-600 pb-5 -mb-[18px]">
+            <div className="flex items-center gap-6">
+              <nav className="flex items-center gap-6 text-[11px] font-bold uppercase tracking-wider text-gray-400">
+                <NavLink to="/" className="hover:text-orange-600 pb-5 -mb-[18px]">
                   Latest Products
                 </NavLink>
-                <NavLink to="/" class="hover:text-orange-600 ">
+                <NavLink to="/" className="hover:text-orange-600 ">
                   Top Rated
                 </NavLink>
-                <NavLink to="/" class="hover:text-orange-600 ">
+                <NavLink to="/" className="hover:text-orange-600 ">
                   Best Sellers
                 </NavLink>
               </nav>
 
-              <button class="flex items-center gap-2 border cursor-pointer border-gray-200 px-4 py-2 rounded text-xs font-semibold hover:bg-gray-50 transition-colors">
+              <button className="flex items-center gap-2 border cursor-pointer border-gray-200 px-4 py-2 rounded text-xs font-semibold hover:bg-gray-50 transition-colors">
                 All products
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
-                  class="h-3 w-3"
+                  className="h-3 w-3"
                   fill="none"
                   viewBox="0 0 24 24"
                   stroke="currentColor"
@@ -705,226 +705,226 @@ function Home() {
             </div>
           </div>
 
-          <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-x-6 gap-y-10">
-            <div class="border rounded-2xl border-gray-100 shadow-2xl">
-              <div class="relative aspect-square p-4">
-                <span class="absolute top-2 right-4 bg-orange-500 text-[10px] text-white font-bold px-2 py-1 rounded uppercase tracking-wider z-10">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-x-6 gap-y-10">
+            <div className="border rounded-2xl border-gray-100 shadow-2xl">
+              <div className="relative aspect-square p-4">
+                <span className="absolute top-2 right-4 bg-orange-500 text-[10px] text-white font-bold px-2 py-1 rounded uppercase tracking-wider z-10">
                   Hot
                 </span>
                 <img
                   src="https://images.unsplash.com/photo-1592078615290-033ee584e267?auto=format&fit=crop&w=500&q=80"
                   alt="Chair"
-                  class="w-full h-full object-contain"
+                  className="w-full h-full object-contain"
                 />
               </div>
 
-              <div class="p-4 bg-[#F8F9FA] border-t border-gray-50">
-                <div class="flex items-center gap-1 mb-2">
-                  <div class="flex text-yellow-400 text-xs">★★★★★</div>
-                  <span class="text-[10px] text-gray-400">(8 reviews)</span>
+              <div className="p-4 bg-[#F8F9FA] border-t border-gray-50">
+                <div className="flex items-center gap-1 mb-2">
+                  <div className="flex text-yellow-400 text-xs">★★★★★</div>
+                  <span className="text-[10px] text-gray-400">(8 reviews)</span>
                 </div>
-                <h3 class="text-sm font-semibold text-gray-800 mb-2">
+                <h3 className="text-sm font-semibold text-gray-800 mb-2">
                   Aqui Glades Accent Chair
                 </h3>
-                <div class="flex items-center gap-2">
-                  <span class="text-xs text-gray-400 line-through">$30.00</span>
-                  <span class="text-base font-bold text-orange-600">
+                <div className="flex items-center gap-2">
+                  <span className="text-xs text-gray-400 line-through">$30.00</span>
+                  <span className="text-base font-bold text-orange-600">
                     $25.00
                   </span>
                 </div>
               </div>
             </div>
-            <div class="border rounded-2xl border-gray-100 shadow-2xl">
-              <div class="relative aspect-square p-4">
-                <span class="absolute top-2 right-4 bg-orange-500 text-[10px] text-white font-bold px-2 py-1 rounded uppercase tracking-wider z-10">
+            <div className="border rounded-2xl border-gray-100 shadow-2xl">
+              <div className="relative aspect-square p-4">
+                <span className="absolute top-2 right-4 bg-orange-500 text-[10px] text-white font-bold px-2 py-1 rounded uppercase tracking-wider z-10">
                   Hot
                 </span>
                 <img
                   src="https://images.unsplash.com/photo-1592078615290-033ee584e267?auto=format&fit=crop&w=500&q=80"
                   alt="Chair"
-                  class="w-full h-full object-contain"
+                  className="w-full h-full object-contain"
                 />
               </div>
 
-              <div class="p-4 bg-[#F8F9FA] border-t border-gray-50">
-                <div class="flex items-center gap-1 mb-2">
-                  <div class="flex text-yellow-400 text-xs">★★★★★</div>
-                  <span class="text-[10px] text-gray-400">(8 reviews)</span>
+              <div className="p-4 bg-[#F8F9FA] border-t border-gray-50">
+                <div className="flex items-center gap-1 mb-2">
+                  <div className="flex text-yellow-400 text-xs">★★★★★</div>
+                  <span className="text-[10px] text-gray-400">(8 reviews)</span>
                 </div>
-                <h3 class="text-sm font-semibold text-gray-800 mb-2">
+                <h3 className="text-sm font-semibold text-gray-800 mb-2">
                   Aqui Glades Accent Chair
                 </h3>
-                <div class="flex items-center gap-2">
-                  <span class="text-xs text-gray-400 line-through">$30.00</span>
-                  <span class="text-base font-bold text-orange-600">
+                <div className="flex items-center gap-2">
+                  <span className="text-xs text-gray-400 line-through">$30.00</span>
+                  <span className="text-base font-bold text-orange-600">
                     $25.00
                   </span>
                 </div>
               </div>
             </div>
-            <div class="border rounded-2xl border-gray-100 shadow-2xl">
-              <div class="relative aspect-square p-4">
-                <span class="absolute top-2 right-4 bg-orange-500 text-[10px] text-white font-bold px-2 py-1 rounded uppercase tracking-wider z-10">
+            <div className="border rounded-2xl border-gray-100 shadow-2xl">
+              <div className="relative aspect-square p-4">
+                <span className="absolute top-2 right-4 bg-orange-500 text-[10px] text-white font-bold px-2 py-1 rounded uppercase tracking-wider z-10">
                   Hot
                 </span>
                 <img
                   src="https://images.unsplash.com/photo-1592078615290-033ee584e267?auto=format&fit=crop&w=500&q=80"
                   alt="Chair"
-                  class="w-full h-full object-contain"
+                  className="w-full h-full object-contain"
                 />
               </div>
 
-              <div class="p-4 bg-[#F8F9FA] border-t border-gray-50">
-                <div class="flex items-center gap-1 mb-2">
-                  <div class="flex text-yellow-400 text-xs">★★★★★</div>
-                  <span class="text-[10px] text-gray-400">(8 reviews)</span>
+              <div className="p-4 bg-[#F8F9FA] border-t border-gray-50">
+                <div className="flex items-center gap-1 mb-2">
+                  <div className="flex text-yellow-400 text-xs">★★★★★</div>
+                  <span className="text-[10px] text-gray-400">(8 reviews)</span>
                 </div>
-                <h3 class="text-sm font-semibold text-gray-800 mb-2">
+                <h3 className="text-sm font-semibold text-gray-800 mb-2">
                   Aqui Glades Accent Chair
                 </h3>
-                <div class="flex items-center gap-2">
-                  <span class="text-xs text-gray-400 line-through">$30.00</span>
-                  <span class="text-base font-bold text-orange-600">
+                <div className="flex items-center gap-2">
+                  <span className="text-xs text-gray-400 line-through">$30.00</span>
+                  <span className="text-base font-bold text-orange-600">
                     $25.00
                   </span>
                 </div>
               </div>
             </div>
-            <div class="border rounded-2xl border-gray-100 shadow-2xl">
-              <div class="relative aspect-square p-4">
-                <span class="absolute top-2 right-4 bg-orange-500 text-[10px] text-white font-bold px-2 py-1 rounded uppercase tracking-wider z-10">
+            <div className="border rounded-2xl border-gray-100 shadow-2xl">
+              <div className="relative aspect-square p-4">
+                <span className="absolute top-2 right-4 bg-orange-500 text-[10px] text-white font-bold px-2 py-1 rounded uppercase tracking-wider z-10">
                   Hot
                 </span>
                 <img
                   src="https://images.unsplash.com/photo-1592078615290-033ee584e267?auto=format&fit=crop&w=500&q=80"
                   alt="Chair"
-                  class="w-full h-full object-contain"
+                  className="w-full h-full object-contain"
                 />
               </div>
 
-              <div class="p-4 bg-[#F8F9FA] border-t border-gray-50">
-                <div class="flex items-center gap-1 mb-2">
-                  <div class="flex text-yellow-400 text-xs">★★★★★</div>
-                  <span class="text-[10px] text-gray-400">(8 reviews)</span>
+              <div className="p-4 bg-[#F8F9FA] border-t border-gray-50">
+                <div className="flex items-center gap-1 mb-2">
+                  <div className="flex text-yellow-400 text-xs">★★★★★</div>
+                  <span className="text-[10px] text-gray-400">(8 reviews)</span>
                 </div>
-                <h3 class="text-sm font-semibold text-gray-800 mb-2">
+                <h3 className="text-sm font-semibold text-gray-800 mb-2">
                   Aqui Glades Accent Chair
                 </h3>
-                <div class="flex items-center gap-2">
-                  <span class="text-xs text-gray-400 line-through">$30.00</span>
-                  <span class="text-base font-bold text-orange-600">
+                <div className="flex items-center gap-2">
+                  <span className="text-xs text-gray-400 line-through">$30.00</span>
+                  <span className="text-base font-bold text-orange-600">
                     $25.00
                   </span>
                 </div>
               </div>
             </div>
-            <div class="border rounded-2xl border-gray-100 shadow-2xl">
-              <div class="relative aspect-square p-4">
-                <span class="absolute top-2 right-4 bg-orange-500 text-[10px] text-white font-bold px-2 py-1 rounded uppercase tracking-wider z-10">
+            <div className="border rounded-2xl border-gray-100 shadow-2xl">
+              <div className="relative aspect-square p-4">
+                <span className="absolute top-2 right-4 bg-orange-500 text-[10px] text-white font-bold px-2 py-1 rounded uppercase tracking-wider z-10">
                   Hot
                 </span>
                 <img
                   src="https://images.unsplash.com/photo-1592078615290-033ee584e267?auto=format&fit=crop&w=500&q=80"
                   alt="Chair"
-                  class="w-full h-full object-contain"
+                  className="w-full h-full object-contain"
                 />
               </div>
 
-              <div class="p-4 bg-[#F8F9FA] border-t border-gray-50">
-                <div class="flex items-center gap-1 mb-2">
-                  <div class="flex text-yellow-400 text-xs">★★★★★</div>
-                  <span class="text-[10px] text-gray-400">(8 reviews)</span>
+              <div className="p-4 bg-[#F8F9FA] border-t border-gray-50">
+                <div className="flex items-center gap-1 mb-2">
+                  <div className="flex text-yellow-400 text-xs">★★★★★</div>
+                  <span className="text-[10px] text-gray-400">(8 reviews)</span>
                 </div>
-                <h3 class="text-sm font-semibold text-gray-800 mb-2">
+                <h3 className="text-sm font-semibold text-gray-800 mb-2">
                   Aqui Glades Accent Chair
                 </h3>
-                <div class="flex items-center gap-2">
-                  <span class="text-xs text-gray-400 line-through">$30.00</span>
-                  <span class="text-base font-bold text-orange-600">
+                <div className="flex items-center gap-2">
+                  <span className="text-xs text-gray-400 line-through">$30.00</span>
+                  <span className="text-base font-bold text-orange-600">
                     $25.00
                   </span>
                 </div>
               </div>
             </div>
-            <div class="border rounded-2xl border-gray-100 shadow-2xl">
-              <div class="relative aspect-square p-4">
-                <span class="absolute top-2 right-4 bg-orange-500 text-[10px] text-white font-bold px-2 py-1 rounded uppercase tracking-wider z-10">
+            <div className="border rounded-2xl border-gray-100 shadow-2xl">
+              <div className="relative aspect-square p-4">
+                <span className="absolute top-2 right-4 bg-orange-500 text-[10px] text-white font-bold px-2 py-1 rounded uppercase tracking-wider z-10">
                   Hot
                 </span>
                 <img
                   src="https://images.unsplash.com/photo-1592078615290-033ee584e267?auto=format&fit=crop&w=500&q=80"
                   alt="Chair"
-                  class="w-full h-full object-contain"
+                  className="w-full h-full object-contain"
                 />
               </div>
 
-              <div class="p-4 bg-[#F8F9FA] border-t border-gray-50">
-                <div class="flex items-center gap-1 mb-2">
-                  <div class="flex text-yellow-400 text-xs">★★★★★</div>
-                  <span class="text-[10px] text-gray-400">(8 reviews)</span>
+              <div className="p-4 bg-[#F8F9FA] border-t border-gray-50">
+                <div className="flex items-center gap-1 mb-2">
+                  <div className="flex text-yellow-400 text-xs">★★★★★</div>
+                  <span className="text-[10px] text-gray-400">(8 reviews)</span>
                 </div>
-                <h3 class="text-sm font-semibold text-gray-800 mb-2">
+                <h3 className="text-sm font-semibold text-gray-800 mb-2">
                   Aqui Glades Accent Chair
                 </h3>
-                <div class="flex items-center gap-2">
-                  <span class="text-xs text-gray-400 line-through">$30.00</span>
-                  <span class="text-base font-bold text-orange-600">
+                <div className="flex items-center gap-2">
+                  <span className="text-xs text-gray-400 line-through">$30.00</span>
+                  <span className="text-base font-bold text-orange-600">
                     $25.00
                   </span>
                 </div>
               </div>
             </div>
-            <div class="border rounded-2xl border-gray-100 shadow-2xl">
-              <div class="relative aspect-square p-4">
-                <span class="absolute top-2 right-4 bg-orange-500 text-[10px] text-white font-bold px-2 py-1 rounded uppercase tracking-wider z-10">
+            <div className="border rounded-2xl border-gray-100 shadow-2xl">
+              <div className="relative aspect-square p-4">
+                <span className="absolute top-2 right-4 bg-orange-500 text-[10px] text-white font-bold px-2 py-1 rounded uppercase tracking-wider z-10">
                   Hot
                 </span>
                 <img
                   src="https://images.unsplash.com/photo-1592078615290-033ee584e267?auto=format&fit=crop&w=500&q=80"
                   alt="Chair"
-                  class="w-full h-full object-contain"
+                  className="w-full h-full object-contain"
                 />
               </div>
 
-              <div class="p-4 bg-[#F8F9FA] border-t border-gray-50">
-                <div class="flex items-center gap-1 mb-2">
-                  <div class="flex text-yellow-400 text-xs">★★★★★</div>
-                  <span class="text-[10px] text-gray-400">(8 reviews)</span>
+              <div className="p-4 bg-[#F8F9FA] border-t border-gray-50">
+                <div className="flex items-center gap-1 mb-2">
+                  <div className="flex text-yellow-400 text-xs">★★★★★</div>
+                  <span className="text-[10px] text-gray-400">(8 reviews)</span>
                 </div>
-                <h3 class="text-sm font-semibold text-gray-800 mb-2">
+                <h3 className="text-sm font-semibold text-gray-800 mb-2">
                   Aqui Glades Accent Chair
                 </h3>
-                <div class="flex items-center gap-2">
-                  <span class="text-xs text-gray-400 line-through">$30.00</span>
-                  <span class="text-base font-bold text-orange-600">
+                <div className="flex items-center gap-2">
+                  <span className="text-xs text-gray-400 line-through">$30.00</span>
+                  <span className="text-base font-bold text-orange-600">
                     $25.00
                   </span>
                 </div>
               </div>
             </div>
-            <div class="border rounded-2xl border-gray-100 shadow-2xl">
-              <div class="relative aspect-square p-4">
-                <span class="absolute top-2 right-4 bg-orange-500 text-[10px] text-white font-bold px-2 py-1 rounded uppercase tracking-wider z-10">
+            <div className="border rounded-2xl border-gray-100 shadow-2xl">
+              <div className="relative aspect-square p-4">
+                <span className="absolute top-2 right-4 bg-orange-500 text-[10px] text-white font-bold px-2 py-1 rounded uppercase tracking-wider z-10">
                   Hot
                 </span>
                 <img
                   src="https://images.unsplash.com/photo-1592078615290-033ee584e267?auto=format&fit=crop&w=500&q=80"
                   alt="Chair"
-                  class="w-full h-full object-contain"
+                  className="w-full h-full object-contain"
                 />
               </div>
 
-              <div class="p-4 bg-[#F8F9FA] border-t border-gray-50">
-                <div class="flex items-center gap-1 mb-2">
-                  <div class="flex text-yellow-400 text-xs">★★★★★</div>
-                  <span class="text-[10px] text-gray-400">(8 reviews)</span>
+              <div className="p-4 bg-[#F8F9FA] border-t border-gray-50">
+                <div className="flex items-center gap-1 mb-2">
+                  <div className="flex text-yellow-400 text-xs">★★★★★</div>
+                  <span className="text-[10px] text-gray-400">(8 reviews)</span>
                 </div>
-                <h3 class="text-sm font-semibold text-gray-800 mb-2">
+                <h3 className="text-sm font-semibold text-gray-800 mb-2">
                   Aqui Glades Accent Chair
                 </h3>
-                <div class="flex items-center gap-2">
-                  <span class="text-xs text-gray-400 line-through">$30.00</span>
-                  <span class="text-base font-bold text-orange-600">
+                <div className="flex items-center gap-2">
+                  <span className="text-xs text-gray-400 line-through">$30.00</span>
+                  <span className="text-base font-bold text-orange-600">
                     $25.00
                   </span>
                 </div>
@@ -935,22 +935,22 @@ function Home() {
       </section> */}
 
       {/* Testimonial section */}
-      {/* <section class="py-16 px-4 ">
-        <div class="container-custom">
-          <div class="text-center mb-12">
-            <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
+      {/* <section className="py-16 px-4 xsm:px-3 xs:px-4 sm:px-6 ">
+        <div className="container-custom">
+          <div className="text-center mb-12">
+            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
               What Our Customers Say
             </h2>
-            <p class="text-gray-600 text-lg">
+            <p className="text-gray-600 text-lg">
               Join thousands of satisfied customers who trust us for their
               shopping needs
             </p>
           </div>
 
-          <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-            <div class="p-8 rounded-2xl shadow-sm border border-gray-100 flex flex-col justify-between">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <div className="p-8 rounded-2xl shadow-sm border border-gray-100 flex flex-col justify-between">
               <div>
-                <span class="text-orange-400 text-5xl  block mb-4">
+                <span className="text-orange-400 text-5xl  block mb-4">
                   <svg
                     width="40"
                     height="40"
@@ -974,30 +974,30 @@ function Home() {
                     />
                   </svg>
                 </span>
-                <div class="flex mb-4">
-                  <span class="text-orange-500 text-xl">★★★★★</span>
+                <div className="flex mb-4">
+                  <span className="text-orange-500 text-xl">★★★★★</span>
                 </div>
-                <p class="text-gray-700 mb-8">
+                <p className="text-gray-700 mb-8">
                   "The quality and design of the products exceeded my
                   expectations. Fast shipping and excellent customer service!"
                 </p>
               </div>
-              <div class="flex items-center gap-4">
+              <div className="flex items-center gap-4">
                 <img
                   src="https://i.pravatar.cc/150?u=sarah"
                   alt="Sarah Johnson"
-                  class="w-12 h-12 rounded-full object-cover"
+                  className="w-12 h-12 rounded-full object-cover"
                 />
                 <div>
-                  <h4 class="font-bold text-gray-900">Sarah Johnson</h4>
-                  <p class="text-sm text-gray-500">Interior Designer</p>
+                  <h4 className="font-bold text-gray-900">Sarah Johnson</h4>
+                  <p className="text-sm text-gray-500">Interior Designer</p>
                 </div>
               </div>
             </div>
 
-            <div class="p-8 rounded-2xl shadow-sm border border-gray-100 flex flex-col justify-between">
+            <div className="p-8 rounded-2xl shadow-sm border border-gray-100 flex flex-col justify-between">
               <div>
-                <span class="text-orange-400 text-5xl  block mb-4">
+                <span className="text-orange-400 text-5xl  block mb-4">
                   <svg
                     width="40"
                     height="40"
@@ -1021,30 +1021,30 @@ function Home() {
                     />
                   </svg>
                 </span>
-                <div class="flex mb-4">
-                  <span class="text-orange-500 text-xl">★★★★★</span>
+                <div className="flex mb-4">
+                  <span className="text-orange-500 text-xl">★★★★★</span>
                 </div>
-                <p class="text-gray-700 mb-8">
+                <p className="text-gray-700 mb-8">
                   "I transformed my entire living space with products from this
                   store. The variety and affordability are unmatched!"
                 </p>
               </div>
-              <div class="flex items-center gap-4">
+              <div className="flex items-center gap-4">
                 <img
                   src="https://i.pravatar.cc/150?u=michael"
                   alt="Michael Chen"
-                  class="w-12 h-12 rounded-full object-cover"
+                  className="w-12 h-12 rounded-full object-cover"
                 />
                 <div>
-                  <h4 class="font-bold text-gray-900 ">Michael Chen</h4>
-                  <p class="text-sm text-gray-500">Home Owner</p>
+                  <h4 className="font-bold text-gray-900 ">Michael Chen</h4>
+                  <p className="text-sm text-gray-500">Home Owner</p>
                 </div>
               </div>
             </div>
 
-            <div class="p-8 rounded-2xl shadow-sm border border-gray-100 flex flex-col justify-between">
+            <div className="p-8 rounded-2xl shadow-sm border border-gray-100 flex flex-col justify-between">
               <div>
-                <span class="text-orange-400 text-5xl block mb-4">
+                <span className="text-orange-400 text-5xl block mb-4">
                   <svg
                     width="40"
                     height="40"
@@ -1068,23 +1068,23 @@ function Home() {
                     />
                   </svg>
                 </span>
-                <div class="flex mb-4">
-                  <span class="text-orange-500 text-xl">★★★★★</span>
+                <div className="flex mb-4">
+                  <span className="text-orange-500 text-xl">★★★★★</span>
                 </div>
-                <p class="text-gray-700 mb-8">
+                <p className="text-gray-700 mb-8">
                   "From electronics to fashion, this is my go-to store for
                   everything. Love the seamless shopping experience!"
                 </p>
               </div>
-              <div class="flex items-center gap-4">
+              <div className="flex items-center gap-4">
                 <img
                   src="https://i.pravatar.cc/150?u=emma"
                   alt="Emma Rodriguez"
-                  class="w-12 h-12 rounded-full object-cover"
+                  className="w-12 h-12 rounded-full object-cover"
                 />
                 <div>
-                  <h4 class="font-bold text-gray-900">Emma Rodriguez</h4>
-                  <p class="text-sm text-gray-500">Fashion Enthusiast</p>
+                  <h4 className="font-bold text-gray-900">Emma Rodriguez</h4>
+                  <p className="text-sm text-gray-500">Fashion Enthusiast</p>
                 </div>
               </div>
             </div>
@@ -1094,10 +1094,10 @@ function Home() {
 
       {/* New Section */}
 
-      {/* <section class="py-6 px-4">
-        <div class="container-custom">
-          <div class="text-center mb-12">
-            <div class="flex items-center justify-center gap-2 mb-2">
+      {/* <section className="py-6 px-4 xsm:px-3 xs:px-4 sm:px-6">
+        <div className="container-custom">
+          <div className="text-center mb-12">
+            <div className="flex items-center justify-center gap-2 mb-2">
               <svg
                 width="24"
                 height="24"
@@ -1120,47 +1120,47 @@ function Home() {
                   stroke-linejoin="round"
                 />
               </svg>
-              <h2 class="text-3xl md:text-4xl font-bold text-gray-900">
+              <h2 className="text-3xl md:text-4xl font-bold text-gray-900">
                 Trusted Brands
               </h2>
             </div>
-            <p class="text-gray-500 text-lg">
+            <p className="text-gray-500 text-lg">
               We partner with the world's leading brands
             </p>
           </div>
 
-          <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-4">
-            <div class="bg-gray-50 rounded-xl py-8 px-4 flex items-center justify-center">
-              <span class="font-bold text-lg text-sky-500">TechVision</span>
+          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-4">
+            <div className="bg-gray-50 rounded-xl py-8 px-4 flex items-center justify-center">
+              <span className="font-bold text-lg text-sky-500">TechVision</span>
             </div>
 
-            <div class="bg-gray-50 rounded-xl py-8 px-4 flex items-center justify-center">
-              <span class="font-bold text-lg text-fuchsia-500">StyleCraft</span>
+            <div className="bg-gray-50 rounded-xl py-8 px-4 flex items-center justify-center">
+              <span className="font-bold text-lg text-fuchsia-500">StyleCraft</span>
             </div>
 
-            <div class="bg-gray-50 rounded-xl py-8 px-4 flex items-center justify-center">
-              <span class="font-bold text-lg text-orange-600">HomeEssence</span>
+            <div className="bg-gray-50 rounded-xl py-8 px-4 flex items-center justify-center">
+              <span className="font-bold text-lg text-orange-600">HomeEssence</span>
             </div>
 
-            <div class="bg-gray-50 rounded-xl py-8 px-4 flex items-center justify-center">
-              <span class="font-bold text-lg text-emerald-500">UrbanLux</span>
+            <div className="bg-gray-50 rounded-xl py-8 px-4 flex items-center justify-center">
+              <span className="font-bold text-lg text-emerald-500">UrbanLux</span>
             </div>
 
-            <div class="bg-gray-50 rounded-xl py-8 px-4 flex items-center justify-center">
-              <span class="font-bold text-lg text-indigo-500">ModernSpace</span>
+            <div className="bg-gray-50 rounded-xl py-8 px-4 flex items-center justify-center">
+              <span className="font-bold text-lg text-indigo-500">ModernSpace</span>
             </div>
 
-            <div class="bg-gray-50 rounded-xl py-8 px-4 flex items-center justify-center">
-              <span class="font-bold text-lg text-pink-600">ElegantLife</span>
+            <div className="bg-gray-50 rounded-xl py-8 px-4 flex items-center justify-center">
+              <span className="font-bold text-lg text-pink-600">ElegantLife</span>
             </div>
           </div>
         </div>
       </section> */}
 
       {/* New section */}
-      {/* <section class="bg-gray-50 py-10 px-4">
-        <div class="max-w-3xl m-auto rounded-[2.5rem] p-4 md:p-16 shadow-2xl text-center">
-          <div class="inline-flex items-center justify-center w-16 h-16 bg-orange-200 rounded-full mb-8">
+      {/* <section className="bg-gray-50 py-10 px-4">
+        <div className="max-w-3xl m-auto rounded-[2.5rem] p-4 md:p-16 shadow-2xl text-center">
+          <div className="inline-flex items-center justify-center w-16 h-16 bg-orange-200 rounded-full mb-8">
             <svg
               width="24"
               height="24"
@@ -1185,21 +1185,21 @@ function Home() {
             </svg>
           </div>
 
-          <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-6">
+          <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-6">
             Subscribe to Our Newsletter
           </h2>
-          <p class="text-gray-500 text-lg max-w-2xl mx-auto mb-10 leading-relaxed">
+          <p className="text-gray-500 text-lg max-w-2xl mx-auto mb-10 leading-relaxed">
             Get the latest updates on new products, exclusive deals, and special
             offers delivered straight to your inbox!
           </p>
 
-          <div class="flex flex-col md:flex-row items-center justify-center gap-4 max-w-lg mx-auto mb-8">
+          <div className="flex flex-col md:flex-row items-center justify-center gap-4 max-w-lg mx-auto mb-8">
             <input
               type="email"
               placeholder="Enter your email"
-              class="w-full px-6 py-4 rounded-xl border border-gray-200 focus:outline-none focus:ring-2 focus:ring-orange-500/20 focus:border-orange-500 transition-all text-gray-700"
+              className="w-full px-6 py-4 rounded-xl border border-gray-200 focus:outline-none focus:ring-2 focus:ring-orange-500/20 focus:border-orange-500 transition-all text-gray-700"
             />
-            <button class="w-full md:w-auto flex items-center justify-center gap-2 bg-orange-600 hover:bg-orange-700 text-white font-semibold px-8 py-4 rounded-xl transition-colors ">
+            <button className="w-full md:w-auto flex items-center justify-center gap-2 bg-orange-600 hover:bg-orange-700 text-white font-semibold px-8 py-4 rounded-xl transition-colors ">
               Subscribe
               <svg
                 width="16"
@@ -1226,9 +1226,9 @@ function Home() {
             </button>
           </div>
 
-          <p class="text-gray-400 text-sm">
+          <p className="text-gray-400 text-sm">
             By subscribing, you agree to our{" "}
-            <NavLink to="/" className="underline">
+            <NavLink to="/" classNameName="underline">
               Privacy Policy
             </NavLink>{" "}
             and consent to receive updates.

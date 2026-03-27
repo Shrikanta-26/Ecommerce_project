@@ -22,10 +22,9 @@ function Navbar() {
     // --breakpoint-lg: 1024px;
     // --breakpoint-xl: 1280px;
 
-    <nav className="border-b border-gray-100 sticky top-0 z-50">
-      {/* Container restricted to your 1180px logic */}
+    <nav className="border-b container-custom border-gray-100">
 
-      <div className="container-custom flex items-center py-4 px-2 justify-between gap-2 xsm:px-3 xs:px-4 sm:px-6 transition-all duration-300">
+      <div className=" flex items-center py-4 px-2 justify-between gap-2 xsm:px-3 xs:px-4 sm:px-6 transition-all duration-300">
         {/* --- LOGO SECTION --- */}
         <div className="flex items-center gap-2 cursor-pointer bs">
           <div className="flex text-orange-500 font-bold text-2xl">
@@ -38,7 +37,7 @@ function Navbar() {
           </span>
         </div>
 
-        {/* --- CENTER MENU (Hidden until 900px / bs) --- */}
+        {/* --- CENTER MENU  --- */}
         <div className="hidden bs:flex items-center gap-6 lg:gap-10">
           {navLinks.map((link) => (
             <NavLink
@@ -58,7 +57,7 @@ function Navbar() {
 
         {/* --- RIGHT SIDE ACTIONS --- */}
         <div className="flex items-center  gap-2 xs:gap-4 sm:gap-8 md:gap-6">
-          {/* SEARCH: Compact on MD, Wide on LG */}
+          {/* SEARCH */}
           <div className="hidden justify-between  xs:flex md:flex items-center bg-gray-50 border border-gray-200 rounded-md overflow-hidden focus-within:ring-2 focus-within:ring-orange-500/10 transition-all">
             <input
               type="text"
@@ -175,7 +174,7 @@ function Navbar() {
               </svg>
             </button>
 
-            {/* MOBILE HAMBURGER (Hidden from bs/900px onwards) */}
+            {/* MOBILE HAMBURGER () */}
             <button
               onClick={() => setIsOpen(!isOpen)}
               className="bs:hidden p-1 text-gray-900 hover:text-orange-500 transition-colors"
@@ -226,7 +225,7 @@ function Navbar() {
             ))}
           </div>
 
-          {/* Mobile-only Search Bar (Visible below md/768px) */}
+          {/* Mobile-only Search Bar */}
           <div className="xs:hidden md:hidden pt-4 ">
             <div className="flex items-center bg-gray-100 rounded-md overflow-hidden">
               <input

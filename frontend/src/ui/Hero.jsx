@@ -1,14 +1,14 @@
 import React from "react";
-
+import { NavLink } from "react-router-dom";
 function HeroSection() {
   return (
     <>
-      <section className="relative border-b border-black/10 flex justify-center py-8 mb-4 bg-amber-50">
-        <div className="grid lg:grid-cols-2 gap-8 items-center container-custom ">
+      <section className="relative border-b px-2 border-black/10 flex  py-4  mb-4 bg-amber-50 xsm:px-3 xs:px-4 sm:px-6">
+        <div className="container-custom  grid  lg:grid-cols-2 gap-10 items-center">
           {/* LEFT CONTENT COLUMN */}
-          <div className="flex justify-start flex-col space-y-8">
+          <div className="flex flex-col space-y-3">
             {/* Badge */}
-            <div className="flex  px-2.5 py-4 h-9 w-fit items-center shrink-0 gap-2 rounded-full border border-[#FFD6A8] bg-white shadow-sm">
+            <div className="flex px-2.5 py-5 h-9 w-fit items-center shrink-0 gap-2 rounded-full border border-[#FFD6A8] bg-white shadow-sm">
               <span>
                 <svg
                   width="16"
@@ -54,31 +54,29 @@ function HeroSection() {
                   />
                 </svg>
               </span>
-              <p className="text-[#364153] font-sans text-sm font-normal leading-5">
-                Spring Collection 2026
-              </p>
+              <p className="text-[#364153] text-sm">Spring Collection 2026</p>
             </div>
 
             {/* Main Heading */}
-            <h1 className="text-4xl md:text-6xl lg:text-[72px] font-medium leading-tight lg:leading-[79.2px] tracking-tight lg:tracking-[-1.8px]">
+            <h1 className="text-3xl tracking-wide md:text-6xl lg:text-[72px] font-medium lg:leading-[79.2px]  lg:tracking-[-1.8px]">
               <p className="text-[#0A0A0A">Design Your</p>
               <p className="text-[#FF6900]">Dream Home</p>
             </h1>
 
             {/* Subtext */}
             <div className="flex flex-col gap-2">
-              <p className="text-[#4A5565] sm:text-lg lg:text-[18px] font-normal leading-relaxed lg:leading-[29.25px]">
+              <p className="text-[#4A5565] sm:text-lg lg:text-[18px] leading-relaxed lg:leading-[29.25px]">
                 Curated furniture that blends timeless elegance with modern
                 comfort. Transform every corner into your sanctuary.
               </p>
 
               {/* CTAs */}
-              <div className="flex flex-wrap gap-5 ">
-                <div className="flex cursor-pointer gap-4 justify-around items-center bg-[#FF6900] rounded-xl px-8 py-4 transition-all hover:bg-[#dd630c]">
-                  <button className=" text-white font-bold cursor-pointer ">
+              <div className="flex justify-start gap-3 w-full xsm:gap-6 xs:gap-9 sm:gap-11 md:13 md:mt-3 bs:gap-10">
+                <div className="flex cursor-pointer text-sm p-2 tracking-wide items-center bg-[#FF6900] rounded-xl transition-all hover:bg-[#dd630c] xsm:p-3 xs:px-4 sm:px-8 md:px-10 md:text-[16px] bs:px-13 lg:px-2">
+                  <NavLink className="text-white cursor-pointer p-1">
                     Explore Collection
-                  </button>
-                  <span className="">
+                  </NavLink>
+                  <span>
                     <svg
                       width="16"
                       height="16"
@@ -103,16 +101,19 @@ function HeroSection() {
                     </svg>
                   </span>
                 </div>
-                <button className="border cursor-pointer border-slate-300 hover:bg-slate-200 text-slate-700 px-8 py-4 rounded-xl font-bold transition-all ">
-                  View Lookbook
-                </button>
+                
+                  <NavLink className="border text-sm flex items-center justify-center tracking-wide cursor-pointer border-slate-300 hover:bg-slate-200 text-slate-700 p-2 rounded-xl font-bold transition-all xsm:p-4 xs:px-8 sm:px-10 md:px-12 md:text-[16px] bs:px-15 lg:px-4">
+                    View Lookbook
+                  </NavLink>
+              
               </div>
             </div>
 
             {/* Features Grid */}
-            <div className="flex  items-start shrink-0 gap-16 pt-4 border-t border-slate-100">
-              <div className="space-y-1">
+            <div className="flex justify-between  items-center gap-1 pt-1 text-[10px] border-t border-slate-100 xs:text-[14px] ">
+              <div className="space-y-1 ">
                 <svg
+                  className=""
                   width="20"
                   height="20"
                   viewBox="0 0 20 20"
@@ -149,8 +150,8 @@ function HeroSection() {
                   />
                 </svg>
 
-                <h4 className="font-bold text-[15px] ">Free Delivery</h4>
-                <p className="text-xs text-slate-400">On orders $50+</p>
+                <h4 className="font-bold">Free Delivery</h4>
+                <p className="text-slate-400">On orders $50+</p>
               </div>
               <div className="space-y-1">
                 <svg
@@ -183,8 +184,8 @@ function HeroSection() {
                   </defs>
                 </svg>
 
-                <h4 className="font-bold text-[15px]">Premium Quality</h4>
-                <p className="text-xs text-slate-400">Handpicked items</p>
+                <h4 className="font-bold">Premium Quality</h4>
+                <p className="text-slate-400">Handpicked items</p>
               </div>
               <div className="space-y-1">
                 <svg
@@ -230,41 +231,39 @@ function HeroSection() {
                     stroke-linejoin="round"
                   />
                 </svg>
-                <h4 className="font-bold text-[15px]">New Arrivals</h4>
-                <p className="text-xs text-slate-400">Updated weekly</p>
+                <h4 className="font-bold">New Arrivals</h4>
+                <p className="text-slate-400">Updated weekly</p>
               </div>
             </div>
           </div>
 
           {/* RIGHT IMAGE COLUMN */}
-          <div className="relative">
+          <div className="relative ">
             {/* Main Image Container */}
-            <div className="relative rounded-2xl overflow-hidden">
+            <div className="relative rounded-[13px] overflow-hidden">
               <img
                 src="https://images.unsplash.com/photo-1555041469-a586c61ea9bc?auto=format&fit=crop&q=80&w=2070"
                 alt="Luxury Living Room"
-                className="w-full h-[490px] rounded-2xl"
+                className="w-full h-56 xs:h-64 sm:h-70 md:h-74 bs:h-90 lg:h-112"
               />
 
               {/* Orange Discount Card (Bottom Left) */}
-              <div className="absolute bottom-4 left-4 bg-[#FF6B00] text-white p-7 rounded-[2rem] flex items-center gap-5 shadow-2xl">
-                <div className="text-4xl font-extrabold border-r border-white/20 pr-5 leading-none">
-                  15%{" "}
-                  <span className="block text-xs font-medium mt-1 tracking-widest opacity-90 uppercase">
+              <div className="absolute bottom-2 left-2 bg-[#FF6B00] text-white p-1 rounded-[10px] flex items-center gap-1 shadow-2xl">
+                <div className="font-bold border-r border-white/20 pr-1 leading-none">
+                  15%
+                  <span className="block text-xs font-medium mt-1 tracking-widest uppercase">
                     Off
                   </span>
                 </div>
-                <div className="pr-2">
-                  <p className="font-bold text-lg leading-tight">First Order</p>
-                  <p className="text-xs font-medium opacity-80 mt-0.5">
-                    Limited Time
-                  </p>
+                <div className="text-xs">
+                  <p className="font-bold leading-tight">First Order</p>
+                  <p className="font-medium mt-1">Limited Time</p>
                 </div>
               </div>
 
               {/* Featured Item Card (Top Right) */}
-              <div className="absolute top-3 right-3 bg-white  p-4 rounded-2xl shadow-2xl w-48 transition-transform duration-500 hover:-translate-y-1">
-                <div className="bg-stone-900 rounded-2xl aspect-square mb-4 flex items-center justify-center overflow-hidden">
+              <div className="absolute top-2 right-2 bg-white p-2 rounded-[10px] shadow-2xl w-20 aspect-auto xsm:w-21 xs:w-28 sm:w-30 md:w-34 bs:w-40 transition-transform duration-500 hover:-translate-y-0.5">
+                <div className="bg-stone-900 rounded-[10px] mb-2  flex items-center justify-center overflow-hidden">
                   <img
                     src="https://images.unsplash.com/photo-1567016432779-094069958ea5?auto=format&fit=crop&q=80&w=800"
                     alt="Sofa"
@@ -272,13 +271,13 @@ function HeroSection() {
                   />
                 </div>
                 <div className="px-1">
-                  <p className="text-[10px] uppercase tracking-[0.15em] text-slate-400 font-bold mb-1">
+                  <p className="text-[10px] uppercase tracking-tight text-slate-500 font-bold mb-0.5">
                     Featured Item
                   </p>
-                  <h4 className="font-bold text-slate-800 text-lg">
+                  <h4 className="font-bold text-slate-800 text-[12px]">
                     Modern Sofa
                   </h4>
-                  <p className="text-[#FF6B00] font-extrabold text-lg mt-0.5">
+                  <p className="text-[#FF6B00] font-bold text- mt-0.5">
                     $899
                   </p>
                 </div>
@@ -287,7 +286,6 @@ function HeroSection() {
           </div>
         </div>
       </section>
-
     </>
   );
 }
