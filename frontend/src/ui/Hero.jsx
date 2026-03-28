@@ -3,8 +3,8 @@ import { NavLink } from "react-router-dom";
 function HeroSection() {
   return (
     <>
-      <section className="relative border-b px-2 border-black/10 flex  py-4  mb-4 bg-amber-50 xsm:px-3 xs:px-4 sm:px-6">
-        <div className="container-custom  grid  lg:grid-cols-2 gap-10 items-center">
+      <section className="relative border-b px-2 border-black/10 flex  py-4  mb-4 bg-amber-50  xsm:px-3 xs:px-4 sm:px-6 md:px-4 bs:px-3 lg:px-2">
+        <div className="container-custom grid  lg:grid-cols-2 gap-10 items-center">
           {/* LEFT CONTENT COLUMN */}
           <div className="flex flex-col space-y-3">
             {/* Badge */}

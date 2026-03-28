@@ -22,11 +22,11 @@ function Navbar() {
     // --breakpoint-lg: 1024px;
     // --breakpoint-xl: 1280px;
 
-    <nav className="border-b container-custom border-gray-100">
+    <nav className="border-b  border-gray-100">
 
-      <div className=" flex items-center py-4 px-2 justify-between gap-2 xsm:px-3 xs:px-4 sm:px-6 transition-all duration-300">
+      <div className="container-custom flex justify-between items-center py-4 px-2 gap-2 xsm:px-3 xs:px-4 sm:px-6 md:px-4 bs:px-3 lg:px-2 transition-all duration-300">
         {/* --- LOGO SECTION --- */}
-        <div className="flex items-center gap-2 cursor-pointer bs">
+        <div className="flex items-center gap-2 cursor-pointer">
           <div className="flex text-orange-500 font-bold text-2xl">
             <span className="animate-pulse">|</span>
             <span className="opacity-80">|</span>
