@@ -3,26 +3,26 @@ import { NavLink } from "react-router-dom";
 function Footer() {
   return (
     <>
-      <footer class="bg-[#101828] text-slate-400 py-6">
-        <div class="container-custom">
-          <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-16">
-            <div class="space-y-6">
-              <div class="flex items-center gap-2">
-                <div class="flex gap-1">
-                  <span class="w-1 h-6 bg-orange-600 rounded-full"></span>
-                  <span class="w-1 h-6 bg-orange-600 rounded-full"></span>
-                  <span class="w-1 h-6 bg-orange-600 rounded-full"></span>
+      <footer className="bg-[#101828] text-slate-400 py-6 px-2 xsm:px-3 xs:px-4 sm:px-6 md:px-4 bs:px-3 lg:px-2">
+        <div className="container-custom">
+          <div className="grid justify-between grid-cols-1 xs:grid-cols-2 md:grid-cols-2 lg:grid-cols-4 gap-7 mb-10">
+            <div className="space-y-2">
+              <div className="flex items-center gap-2">
+                <div className="flex gap-1">
+                  <span className="w-1 h-6 bg-orange-600 rounded-full"></span>
+                  <span className="w-1 h-6 bg-orange-600 rounded-full"></span>
+                  <span className="w-1 h-6 bg-orange-600 rounded-full"></span>
                 </div>
-                <span class="text-white text-2xl font-bold tracking-tight">
+                <span className="text-white text-2xl font-bold tracking-tight">
                   DAVICI
                 </span>
               </div>
-              <p class="text-sm leading-relaxed">
+              <p className="text-sm leading-relaxed">
                 Premium furniture store offering the best selection of modern
                 and classic pieces for your home.
               </p>
-              <div class="flex gap-4 text-white">
-                <NavLink to="/" class="">
+              <div className="flex gap-4 text-white">
+                <NavLink to="/" className="">
                   <svg
                     width="20"
                     height="20"
@@ -39,7 +39,7 @@ function Footer() {
                     />
                   </svg>
                 </NavLink>
-                <NavLink to="/" class="">
+                <NavLink to="/" className="">
                   <svg
                     width="20"
                     height="20"
@@ -56,7 +56,7 @@ function Footer() {
                     />
                   </svg>
                 </NavLink>
-                <NavLink to="/" class="">
+                <NavLink to="/" className="">
                   <svg
                     width="20"
                     height="20"
@@ -87,7 +87,7 @@ function Footer() {
                     />
                   </svg>
                 </NavLink>
-                <NavLink to="/" class="">
+                <NavLink to="/" className="">
                   <svg
                     width="20"
                     height="20"
@@ -114,71 +114,85 @@ function Footer() {
               </div>
             </div>
 
-            <div>
-              <h4 class="text-white font-semibold mb-6">Quick Links</h4>
-              <ul class="space-y-4 text-sm">
-                <li>
-                  <NavLink
-                    to="about"
-                    class="hover:text-white transition-colors"
-                  >
-                    About Us
-                  </NavLink>
-                </li>
-                <li>
-                  <NavLink to="shop" class="hover:text-white transition-colors">
-                    Shop
-                  </NavLink>
-                </li>
-                <li>
-                  <NavLink to="blog" class="hover:text-white transition-colors">
-                    Blog
-                  </NavLink>
-                </li>
-                <li>
-                  <NavLink
-                    to="contact"
-                    class="hover:text-white transition-colors"
-                  >
-                    Contact
-                  </NavLink>
-                </li>
-                <li>
-                  <NavLink to="Faqs" class="hover:text-white transition-colors">
-                    FAQs
-                  </NavLink>
-                </li>
-              </ul>
+            <div className="">
+              <h4 className="text-white font-semibold mb-4">Quick Links</h4>
+              <div className="space-y-4 text-sm grid grid-cols-5 gap-2">
+                <NavLink
+                  to="about"
+                  className="hover:text-white transition-colors"
+                >
+                  About
+                </NavLink>
+
+                <NavLink
+                  to="shop"
+                  className="hover:text-white transition-colors"
+                >
+                  Shop
+                </NavLink>
+
+                <NavLink
+                  to="blog"
+                  className="hover:text-white transition-colors"
+                >
+                  Blog
+                </NavLink>
+
+                <NavLink
+                  to="contact"
+                  className="hover:text-white transition-colors"
+                >
+                  Contact
+                </NavLink>
+
+                <NavLink
+                  to="Faqs"
+                  className="hover:text-white transition-colors"
+                >
+                  FAQs
+                </NavLink>
+              </div>
             </div>
 
             <div>
-              <h4 class="text-white font-semibold mb-6">Customer Service</h4>
-              <ul class="space-y-4 text-sm">
+              <h4 className="text-white font-semibold mb-6">
+                Customer Service
+              </h4>
+              <ul className="space-y-3 text-sm">
                 <li>
-                  <NavLink to="/" class="hover:text-white transition-colors">
+                  <NavLink
+                    to="/"
+                    className="hover:text-white transition-colors"
+                  >
                     Shipping Policy
                   </NavLink>
                 </li>
                 <li>
-                  <NavLink to="/" class="hover:text-white transition-colors">
+                  <NavLink
+                    to="/"
+                    className="hover:text-white transition-colors"
+                  >
                     Returns & Exchanges
                   </NavLink>
                 </li>
                 <li>
                   <NavLink
                     to="order"
-                    class="hover:text-white transition-colors"
+                    className="hover:text-white transition-colors"
                   >
                     Track Order
                   </NavLink>
                 </li>
                 <li>
-                  <NavLink to="/" class="hover:text-red-500">
+                  <NavLink to="/" className="hover:text-red-500">
                     Privacy Policy
                   </NavLink>
                 </li>
                 <li>
-                  <NavLink to="/" class="hover:text-white transition-colors">
+                  <NavLink
+                    to="/"
+                    className="hover:text-white transition-colors"
+                  >
                     Terms & Conditions
                   </NavLink>
                 </li>
@@ -186,10 +200,10 @@ function Footer() {
             </div>
 
             <div>
-              <h4 class="text-white font-semibold mb-6">Contact Info</h4>
-              <ul class="space-y-4 text-sm mb-8">
-                <li class="flex items-start gap-3">
-                  <span class="mt-1">
+              <h4 className="text-white font-semibold mb-6">Contact Info</h4>
+              <ul className="space-y-4 text-sm mb-8">
+                <li className="flex items-start gap-3">
+                  <span className="mt-1">
                     <svg
                       width="16"
                       height="16"
@@ -215,7 +229,7 @@ function Footer() {
                   </span>
                   <span>123 Furniture Street, Design City, DC 12345</span>
                 </li>
-                <li class="flex items-center gap-3">
+                <li className="flex items-center gap-3">
                   <svg
                     width="16"
                     height="16"
@@ -234,7 +248,7 @@ function Footer() {
 
                   <span>+1 (555) 123-4567</span>
                 </li>
-                <li class="flex items-center gap-3">
+                <li className="flex items-center gap-3">
                   <svg
                     width="16"
                     height="16"
@@ -262,25 +276,25 @@ function Footer() {
                 </li>
               </ul>
 
-              <h4 class="text-white font-semibold mb-4">Newsletter</h4>
-              <form class="flex gap-2">
+              <h4 className="text-white font-semibold mb-4">Newsletter</h4>
+              <form className="flex gap-2">
                 <input
                   type="email"
                   placeholder="Your email"
-                  class="bg-slate-800/50 border border-slate-700 rounded px-4 py-2 w-full text-sm focus:outline-none focus:border-orange-500 transition-colors"
+                  className="bg-slate-800/50 border border-slate-700 rounded px-4 py-2 w-full text-sm focus:outline-none focus:border-orange-500 transition-colors"
                 />
                 <button class="bg-orange-600 hover:bg-orange-700 text-white p-2 rounded transition-colors px-4">
-                  <i class="fas fa-arrow-right"></i>
+                  <i className="fas fa-arrow-right"></i>
                 </button>
               </form>
             </div>
           </div>
         </div>
 
-        <div class="border-t border-slate-800 ">
-          <div class="container-custom pt-8 flex flex-col md:flex-row justify-between items-center gap-4">
-            <p class="text-sm">© 2026 DAVICI. All rights reserved.</p>
-            <div class="flex gap-4 items-center grayscale-0">
+        <div className="border-t border-slate-800 ">
+          <div className="container-custom pt-8 flex flex-col md:flex-row justify-between items-center gap-4">
+            <p className="text-sm">© 2026 DAVICI. All rights reserved.</p>
+            <div className="flex gap-4 items-center grayscale-0">
               <svg
                 width="31"
                 height="24"

@@ -526,7 +526,7 @@ function Home() {
       </section>
 
       {/* New Section? */}
-       <section className="mt-6 bg-[linear-gradient(135deg,#FF6900_0%,#FB2C36_100%)] px-2 py-4 xsm:px-3 xs:px-4 sm:px-6 md:px-4 bs:px-3 lg:px-2">
+       <section className="mt-6 bg-[linear-gradient(135deg,#FF6900_0%,#FB2C36_100%)] py-4 px-2  xsm:px-3 xs:px-4 sm:px-6 md:px-4 bs:px-3 lg:px-2 lg:py-8">
         <div className="text-center mb-4 xsm:mb-12">
           <div className="flex items-center justify-center gap-2 text-4xl font-bold mb-2">
             <svg
@@ -609,7 +609,7 @@ function Home() {
             </div>
           </div>
         </div>
-      <div className="grid grid-cols-1 xsm:grid-cols-2 xs:grid-cols-3  sm:grid-cols-3 md:grid-cols-4 bs:grid-cols-4 lg:grid-cols-5 gap-6 px-12 xsm:px-0">
+      <div className="container-custom grid grid-cols-1 xsm:grid-cols-2 xs:grid-cols-3  sm:grid-cols-3 md:grid-cols-4 bs:grid-cols-4 lg:grid-cols-5 gap-6 px-12 xsm:px-0">
           <div className="bg-white rounded-2xl shadow-2xl">
             <div className="relative aspect-square p-4">
               <span className="absolute top-2 right-4 bg-orange-500 text-[10px] text-white font-bold px-2 py-1 rounded uppercase tracking-wider z-10">
@@ -722,9 +722,9 @@ function Home() {
         <section className="container-custom text-gray-900 px-2 xsm:px-3 xs:px-4 sm:px-6 md:px-4 bs:px-3 lg:px-2">
         <div className="mt-6">
           <div className="flex flex-col md:flex-row md:items-center justify-between gap-2 pb-8">
-            <h2 className="text-3xl font-normal text-center">Hot Products</h2>
-            <div className="flex items-center gap-2 xs:gap-3">
-              <nav className="flex items-center gap-2 text-[11px] font-bold uppercase tracking-wider text-gray-400">
+            <h2 className="text-2xl font-bold text-center xs:text-[32px] md:text-2xl">Hot Products</h2>
+            <div className="flex items-center justify-between gap-2 md:gap-3">
+              <nav className="flex items-center gap-2 text-[8px] font-bold uppercase tracking-wider text-gray-400   xsm:gap-3 xsm:text-[11px]  xs:gap-6 xs:text-[14px] sm:gap-10 md:gap-6 ">
                 <NavLink to="/" className="hover:text-orange-600 pb-4.5 -mb-[18px]">
                   Latest Products
                 </NavLink>
@@ -736,7 +736,7 @@ function Home() {
                 </NavLink>
               </nav>
 
-              <button className="flex items-center gap-2 border cursor-pointer border-gray-200 px-4 py-2 rounded text-xs font-semibold hover:bg-gray-50 transition-colors">
+              <button className="flex items-center gap-2 border cursor-pointer border-gray-200 px-4 py-2 rounded text-[9px] font-bold uppercase hover:bg-gray-50 transition-colors xsm:text-[10px] xs:text-[14px]">
                 All products
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -867,22 +867,22 @@ function Home() {
       </section>  
 
       {/* Testimonial section */}
-      {/* <section className="py-16 px-4 xsm:px-3 xs:px-4 sm:px-6 ">
+       <section className="py-10 px-2 xsm:px-3 xs:px-4 sm:px-6 md:px-4 bs:px-3 lg:px-2">
         <div className="container-custom">
-          <div className="text-center mb-12">
-            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
+          <div className="text-center mb-8">
+            <h2 className="text-2xl md:text-4xl font-bold text-gray-900 mb-4 xs:text-3xl">
               What Our Customers Say
             </h2>
-            <p className="text-gray-600 text-lg">
+            <p className="text-gray-600 text-[15px] xs:text-[18px]">
               Join thousands of satisfied customers who trust us for their
               shopping needs
             </p>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            <div className="p-8 rounded-2xl shadow-sm border border-gray-100 flex flex-col justify-between">
+          <div className="grid grid-cols-1 xs:grid-cols-2 sm:grid-cols-2 md:grid-cols-3 gap-6">
+            <div className="p-2 rounded-2xl shadow-sm border border-gray-100 flex flex-col justify-between xs:p-4 lg:p-6">
               <div>
-                <span className="text-orange-400 text-5xl  block mb-4">
+                <span className="text-orange-400 text-xl block mb-3">
                   <svg
                     width="40"
                     height="40"
@@ -906,10 +906,10 @@ function Home() {
                     />
                   </svg>
                 </span>
-                <div className="flex mb-4">
+                <div className="flex mb-2">
                   <span className="text-orange-500 text-xl">★★★★★</span>
                 </div>
-                <p className="text-gray-700 mb-8">
+                <p className="text-gray-700 mb-4">
                   "The quality and design of the products exceeded my
                   expectations. Fast shipping and excellent customer service!"
                 </p>
@@ -927,7 +927,7 @@ function Home() {
               </div>
             </div>
 
-            <div className="p-8 rounded-2xl shadow-sm border border-gray-100 flex flex-col justify-between">
+            <div className="p-2 rounded-2xl shadow-sm border border-gray-100 flex flex-col justify-between xs:p-4 lg:p-6">
               <div>
                 <span className="text-orange-400 text-5xl  block mb-4">
                   <svg
@@ -974,7 +974,7 @@ function Home() {
               </div>
             </div>
 
-            <div className="p-8 rounded-2xl shadow-sm border border-gray-100 flex flex-col justify-between">
+            <div className="p-2 rounded-2xl shadow-sm border border-gray-100 flex flex-col justify-between xs:p-4 lg:p-6">
               <div>
                 <span className="text-orange-400 text-5xl block mb-4">
                   <svg
@@ -1022,13 +1022,13 @@ function Home() {
             </div>
           </div>
         </div>
-      </section> */}
+      </section>
 
       {/* New Section */}
 
-      {/* <section className="py-6 px-4 xsm:px-3 xs:px-4 sm:px-6">
+    <section className="py-2 px-2 xsm:px-3 xs:px-4 sm:px-6 md:px-4 bs:px-3 lg:px-2">
         <div className="container-custom">
-          <div className="text-center mb-12">
+          <div className="text-center mb-4">
             <div className="flex items-center justify-center gap-2 mb-2">
               <svg
                 width="24"
@@ -1061,36 +1061,36 @@ function Home() {
             </p>
           </div>
 
-          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-4">
-            <div className="bg-gray-50 rounded-xl py-8 px-4 flex items-center justify-center">
+          <div className="grid grid-cols-2 xs:grid-cols-3  md:grid-cols-4 lg:grid-cols-6 gap-3">
+            <div className="bg-gray-100 rounded-xl p-6 flex items-center justify-center">
               <span className="font-bold text-lg text-sky-500">TechVision</span>
             </div>
 
-            <div className="bg-gray-50 rounded-xl py-8 px-4 flex items-center justify-center">
+            <div className="bg-gray-100 rounded-xl p-6 flex items-center justify-center">
               <span className="font-bold text-lg text-fuchsia-500">StyleCraft</span>
             </div>
 
-            <div className="bg-gray-50 rounded-xl py-8 px-4 flex items-center justify-center">
+            <div className="bg-gray-100 rounded-xl p-6 flex items-center justify-center">
               <span className="font-bold text-lg text-orange-600">HomeEssence</span>
             </div>
 
-            <div className="bg-gray-50 rounded-xl py-8 px-4 flex items-center justify-center">
+            <div className="bg-gray-100 rounded-xl p-6 flex items-center justify-center">
               <span className="font-bold text-lg text-emerald-500">UrbanLux</span>
             </div>
 
-            <div className="bg-gray-50 rounded-xl py-8 px-4 flex items-center justify-center">
+            <div className="bg-gray-100 rounded-xl p-6 flex items-center justify-center">
               <span className="font-bold text-lg text-indigo-500">ModernSpace</span>
             </div>
 
-            <div className="bg-gray-50 rounded-xl py-8 px-4 flex items-center justify-center">
+            <div className="bg-gray-100 rounded-xl p-6 flex items-center justify-center">
               <span className="font-bold text-lg text-pink-600">ElegantLife</span>
             </div>
           </div>
         </div>
-      </section> */}
+      </section> 
 
       {/* New section */}
-      {/* <section className="bg-gray-50 py-10 px-4">
+       <section className="bg-gray-50 py-10 px-2 ">
         <div className="max-w-3xl m-auto rounded-[2.5rem] p-4 md:p-16 shadow-2xl text-center">
           <div className="inline-flex items-center justify-center w-16 h-16 bg-orange-200 rounded-full mb-8">
             <svg
@@ -1125,13 +1125,13 @@ function Home() {
             offers delivered straight to your inbox!
           </p>
 
-          <div className="flex flex-col md:flex-row items-center justify-center gap-4 max-w-lg mx-auto mb-8">
+          <div className="flex flex-col xs:flex-row   items-center justify-center gap-4 max-w-lg mx-auto mb-8">
             <input
               type="email"
               placeholder="Enter your email"
               className="w-full px-6 py-4 rounded-xl border border-gray-200 focus:outline-none focus:ring-2 focus:ring-orange-500/20 focus:border-orange-500 transition-all text-gray-700"
             />
-            <button className="w-full md:w-auto flex items-center justify-center gap-2 bg-orange-600 hover:bg-orange-700 text-white font-semibold px-8 py-4 rounded-xl transition-colors ">
+            <button className="w-full xs:w-auto flex items-center justify-center gap-2 bg-orange-600 hover:bg-orange-700 text-white font-semibold px-8 py-4 rounded-xl transition-colors ">
               Subscribe
               <svg
                 width="16"
@@ -1166,8 +1166,8 @@ function Home() {
             and consent to receive updates.
           </p>
         </div>
-      </section> */}
-      {/* <Footer /> */}
+      </section>
+      <Footer />
 
     </>
   );
