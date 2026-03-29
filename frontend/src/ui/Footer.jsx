@@ -5,7 +5,7 @@ function Footer() {
     <>
       <footer className="bg-[#101828] text-slate-400 py-6 px-2 xsm:px-3 xs:px-4 sm:px-6 md:px-4 bs:px-3 lg:px-2">
         <div className="container-custom">
-          <div className="grid justify-between grid-cols-1 xs:grid-cols-2 md:grid-cols-2 lg:grid-cols-4 gap-7 mb-10">
+          <div className="grid  grid-cols-1 xs:grid-cols-2 md:grid-cols-2 bs:grid-cols-4 lg:grid-cols-4 gap-5 mb-10 xs:gap-12">
             <div className="space-y-2">
               <div className="flex items-center gap-2">
                 <div className="flex gap-1">
@@ -17,11 +17,11 @@ function Footer() {
                   DAVICI
                 </span>
               </div>
-              <p className="text-sm leading-relaxed">
+              <p className="text-sm leading-relaxed bs:mb-6">
                 Premium furniture store offering the best selection of modern
                 and classic pieces for your home.
               </p>
-              <div className="flex gap-4 text-white">
+              <div className="flex gap-3 text-white xsm:gap-6 xs:gap-3 bs:gap-5">
                 <NavLink to="/" className="">
                   <svg
                     width="20"
@@ -115,8 +115,8 @@ function Footer() {
             </div>
 
             <div className="">
-              <h4 className="text-white font-semibold mb-4">Quick Links</h4>
-              <div className="space-y-4 text-sm grid grid-cols-5 gap-2">
+              <h4 className="text-white font-semibold mb-3">Quick Links</h4>
+              <div className="text-sm flex justify-start gap-3 items-center xsm:gap-6 xs:flex-col xs:items-start xs:gap-2 bs:gap-2.5">
                 <NavLink
                   to="about"
                   className="hover:text-white transition-colors"
@@ -155,54 +155,39 @@ function Footer() {
             </div>
 
             <div>
-              <h4 className="text-white font-semibold mb-6">
+              <h4 className="text-white font-semibold mb-3">
                 Customer Service
               </h4>
-              <ul className="space-y-3 text-sm">
-                <li>
-                  <NavLink
-                    to="/"
-                    className="hover:text-white transition-colors"
-                  >
-                    Shipping Policy
-                  </NavLink>
-                </li>
-                <li>
-                  <NavLink
-                    to="/"
-                    className="hover:text-white transition-colors"
-                  >
-                    Returns & Exchanges
-                  </NavLink>
-                </li>
-                <li>
-                  <NavLink
-                    to="order"
-                    className="hover:text-white transition-colors"
-                  >
-                    Track Order
-                  </NavLink>
-                </li>
-                <li>
-                  <NavLink to="/" className="hover:text-red-500">
-                    Privacy Policy
-                  </NavLink>
-                </li>
-                <li>
-                  <NavLink
-                    to="/"
-                    className="hover:text-white transition-colors"
-                  >
-                    Terms & Conditions
-                  </NavLink>
-                </li>
-              </ul>
+              <div className="text-sm grid grid-cols-2 gap-2 xs:grid-cols-1 bs:gap-2.5">
+                <NavLink to="/" className="hover:text-white transition-colors">
+                  Shipping Policy
+                </NavLink>
+
+                <NavLink to="/" className="hover:text-white transition-colors">
+                  Returns & Exchanges
+                </NavLink>
+
+                <NavLink
+                  to="order"
+                  className="hover:text-white transition-colors"
+                >
+                  Track Order
+                </NavLink>
+
+                <NavLink to="/" className="hover:text-red-500">
+                  Privacy Policy
+                </NavLink>
+
+                <NavLink to="/" className="hover:text-white transition-colors">
+                  Terms & Conditions
+                </NavLink>
+              </div>
             </div>
 
             <div>
-              <h4 className="text-white font-semibold mb-6">Contact Info</h4>
-              <ul className="space-y-4 text-sm mb-8">
-                <li className="flex items-start gap-3">
+              <h4 className="text-white font-semibold mb-3">Contact Info</h4>
+              <div className="flex flex-col gap-2 text-sm mb-6 bs:gap-3">
+                <div className="flex items-start gap-2">
                   <span className="mt-1">
                     <svg
                       width="16"
@@ -228,8 +213,8 @@ function Footer() {
                     </svg>
                   </span>
                   <span>123 Furniture Street, Design City, DC 12345</span>
-                </li>
-                <li className="flex items-center gap-3">
+                </div>
+                <div className="flex items-center gap-2">
                   <svg
                     width="16"
                     height="16"
@@ -247,8 +232,8 @@ function Footer() {
                   </svg>
 
                   <span>+1 (555) 123-4567</span>
-                </li>
-                <li className="flex items-center gap-3">
+                </div>
+                <div className="flex items-center gap-2">
                   <svg
                     width="16"
                     height="16"
@@ -273,8 +258,8 @@ function Footer() {
                   </svg>
 
                   <span>info@davici.com</span>
-                </li>
-              </ul>
+                </div>
+              </div>
 
               <h4 className="text-white font-semibold mb-4">Newsletter</h4>
               <form className="flex gap-2">
